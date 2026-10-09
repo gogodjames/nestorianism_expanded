@@ -51,15 +51,6 @@ zex_nasrani_rite = {
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
 	}
-	reserved_male_names = {
-		Markose Lukose Partikose Varghese Yakob Mathulla Yesoph Yohannan Ninan Chacko Issac Kurian Kuriakose Pathros Thomma Cheriyan
-		Pathappan Koshy Joshy Easow Vinci Thommen Yohan Kuruvila Geroge Geevarghese Pranju Inasu Pathros Pathappan Philipose Pothan Eapen
-		Oommen Chandy Monu Monukuttan Eappen Kuruvila Pathappan
-	}
-	reserved_female_names = {
-		Mariamma Eliamma Elia Mariam Maria Akkamma Thersia Theresa Achamma Susanna Susan Saramma Sheeba Rahel Rahelamma Akkamma Elikutty
-		Molu Molukutty Miryam Susamma Ancy Annamma Acca Kunju Kunjorotha Shoshannah
-	}
 }
 
 # Mongolic/Turkic Church of the East
