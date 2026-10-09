@@ -1,0 +1,43 @@
+﻿nex_nestorian_metropolitanate = {
+	type = title
+	tier = duchy
+	priority = 120
+	governments = { ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		target_character = yes
+		top_liege = no
+		only_holder = yes
+	}
+	special_title = clerical_region
+}
+
+nex_nestorian_metropolitan_male = {
+	type = character
+	gender = male
+	special = clerical_region_holder
+	tier = duchy
+	priority = 298
+	governments = { theocracy_government ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+		spouse_takes_title = no
+	}
+}
+
+nex_nestorian_metropolitan_female = {
+	type = character
+	gender = female
+	special = clerical_region_holder
+	tier = duchy
+	priority = 298
+	governments = { theocracy_government ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+		spouse_takes_title = no
+	}
+}
