@@ -1,0 +1,57 @@
+﻿nestorian = {
+	main_rite = nestorian
+	faith_details = {
+		religion = christianity_religion
+		color = { 0.8 0.3 0.5 }
+		graphical_faith = "orthodox_gfx"
+		religious_head = d_patriarchate_in_the_east
+		head_of_rite = d_patriarchate_in_the_east
+	}
+
+	eminent_holy_sites = {
+		jerusalem
+		baghdad
+		kerala
+	}
+
+	holy_sites = {
+		kara_khorum
+		farz
+		antioch
+	}
+
+	tenets = {
+		tenet_adaptive
+		tenet_acts_of_apostles
+		tenet_mendicant_preachers
+	}
+
+	doctrines = {
+		doctrine_monasticism_accepted
+		doctrine_pluralism_pluralistic
+		doctrine_anointment_permitted
+		special_doctrine_ecumenical_christian
+	}
+
+	holy_order_names = {
+		{ name = "holy_order_order_of_saint_addai" }
+	}
+
+	localization = { # Utilizes the 'West Christian' Saints, shared by Catholics and Orthodox
+		# Patriarchs instead of Popes
+		ReligiousHeadName = nestorian_religious_head_title
+		ReligiousHeadNameFemale = nestorian_religious_head_title_female
+		ReligiousHeadTitleName = nestorian_religious_head_title_name
+	}
+
+	# Christian names reserved across the Church of the East; rite types do not support these fields.
+	reserved_male_names = {
+		Markose Lukose Partikose Varghese Yakob Mathulla Yesoph Yohannan Ninan Chacko Issac Kurian Kuriakose Pathros Thomma Cheriyan
+		Pathappan Koshy Joshy Easow Vinci Thommen Yohan Kuruvila Geroge Geevarghese Pranju Inasu Pathros Pathappan Philipose Pothan Eapen
+		Oommen Chandy Monu Monukuttan Eappen Kuruvila Pathappan
+	}
+	reserved_female_names = {
+		Mariamma Eliamma Elia Mariam Maria Akkamma Thersia Theresa Achamma Susanna Susan Saramma Sheeba Rahel Rahelamma Akkamma Elikutty
+		Molu Molukutty Miryam Susamma Ancy Annamma Acca Kunju Kunjorotha Shoshannah
+	}
+}

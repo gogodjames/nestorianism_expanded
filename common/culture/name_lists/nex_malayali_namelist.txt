@@ -1,0 +1,130 @@
+﻿nex_name_list_malayali = {
+
+	cadet_dynasty_names = {
+		"dynn_Samoothiri"
+		"dynn_Perumpadappu"
+		"dynn_Kulasekhara"
+		"dynn_Venad"
+		"dynn_Kolathiri"
+		"dynn_Valluvakonathiri"
+		{ "dynn_Nair" }
+		{ "dynn_Menon" }
+		{ "dynn_Pillai" }
+		{ "dynn_Nambiar" }
+		{ "dynn_Panicker" }
+		{ "dynn_Kurup" }
+		{ "dynn_Nedungadi" }
+		{ "dynn_Eradi" }
+		{ "dynn_Thampi" }
+		{ "dynn_Varma" }
+		{ "dynn_Unnithan" }
+		{ "dynn_Valiathan" }
+		{ "dynn_Kartha" }
+		{ "dynn_Kaimal" }
+		{ "dynn_Mannadiar" }
+		{ "dynn_Namboodiri" }
+		{ "dynn_Ezhuthachan" }
+		{ "dynn_Moothan" }
+		{ "dynn_Guptan" }
+		{ "dynn_Tharakan" }
+		{ "dynn_Chetty" }
+		{ "dynn_Asari" }
+		{ "dynn_Musath" }
+		{ "dynn_Ezhava" }
+		{ "dynn_Thiyya" }
+		{ "dynn_Mukkuvan" }
+		{ "dynn_Pulayan" }
+		{ "dynn_Parayan" }
+	}
+
+	dynasty_names = {
+		"dynn_Chera"
+		"dynn_Ay"
+		"dynn_Kulasekhara"
+		"dynn_Samoothiri"
+		"dynn_Perumpadappu"
+		"dynn_Kolathiri"
+		"dynn_Venad"
+		"dynn_Valluvakonathiri"
+		"dynn_Eralpad"
+		"dynn_Cochin"
+		"dynn_Travaancore"
+		"dynn_Pazhassi"
+		{ "dynn_Nair" }
+		{ "dynn_Menon" }
+		{ "dynn_Pillai" }
+		{ "dynn_Nambiar" }
+		{ "dynn_Panicker" }
+		{ "dynn_Kurup" }
+		{ "dynn_Nedungadi" }
+		{ "dynn_Eradi" }
+		{ "dynn_Thampi" }
+		{ "dynn_Varma" }
+		{ "dynn_Unnithan" }
+		{ "dynn_Valiathan" }
+		{ "dynn_Kartha" }
+		{ "dynn_Kaimal" }
+		{ "dynn_Mannadiar" }
+		{ "dynn_Namboodiri" }
+		{ "dynn_Ezhuthachan" }
+		{ "dynn_Moothan" }
+		{ "dynn_Guptan" }
+		{ "dynn_Tharakan" }
+		{ "dynn_Chetty" }
+		{ "dynn_Asari" }
+		{ "dynn_Musath" }
+		{ "dynn_Ezhava" }
+		{ "dynn_Thiyya" }
+		{ "dynn_Mukkuvan" }
+		{ "dynn_Pulayan" }
+		{ "dynn_Parayan" }
+	}
+
+	male_names = {
+		Ayyappan Amarabhujangan Aparajitan Appunni Arangath_Kandan Arikasari Arinjayan Arulmozhi
+		Athirajendran Aditya Ambalavasi Avani_Azhvan Bhaskara Bhaskara_Ravi Brahma_Rayan Chadayan
+		Chanthu Chathan Chekoran Chithira Chottan
+		Devan Damodaran Raman Raman_Kotha Kotha Kotha_Ravi Kotha_Varma
+		Iravi Iravi_Kotha Iravi_Raman Iravi_Chathan Jayasimhan Jayavarman
+		Kandiyoor Kandan Kandan_Koran Kandan_Kumaran Karunandan Karunadakkan Kesavan
+		Kodai Kodai_Ravi Kothavarma Kulasekhara Kulasekharan Kumaran Kumaran_Ravi
+		Kutthan Maravarman Maran Maran_Chathan Maran_Kandan Maran_Koran Moorthi
+		Narayanan Narayanan_Kandan Neelakantan Niyayaparipalan Panicker Pazhassi
+		Perumal Sankaran Sankaran_Ravi Sthanu Sthanu_Ravi Sankaranarayanan
+		Tekkan Unni Unni_Raman Unnirayan Unnikrishnan
+		Varagunan Varma Varma_Raja Vayalkkadan Velan Vira_Raman Vira_Ravi Vira_Kerala
+		Virakeralan Vikraman Vikrama_Pandyan Viswanathan
+		Achyuthan Ananthan Aravindan Balakrishnan Chandran Damodaran Govindan Unnikutthan
+	}
+
+	female_names = {
+		Amba Ambika Ammankavu Ammu Amritavalli
+		Ariya Ariyamma Arulmozhi Athira Attingal_Thampuratti Avani Azhvi
+		Chandramathi Chithira Devaki Devi Durga Gauri
+		Indira Janaki Jayadevi Kachi Kali
+		Kalyani Kamakshi Kanakavalli Kannamma Kanthimathi Karumani Kausalya
+		Kavitha Kochathamma Kochu Kothai Kuntavi
+		Lakshmi Leela Madhavi Malathi Malini Malu Manorama Maya Meenakshi Muktha
+		Nandini Nangeli Nila Nilamma Niveditha
+		Parvathy Pooja Poornima Prabha Prasanna
+		Radha Rajalaksmi Rajeswari Ratnam Rukmini
+		Saraswathi Sarojini Sreedevi Subhadra Srikurumba
+		Thamburatti Unniyarcha Unnimaya Unniyamma
+		Vadakkedath Vatsala Vasundhara Vijaya
+	}
+
+	house_based_map_names = yes
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 30
+	mat_grf_name_chance = 45
+	father_name_chance = 25
+
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 60
+	mother_name_chance = 10
+
+	dynasty_of_location_prefix = "dynnp_of"
+
+}

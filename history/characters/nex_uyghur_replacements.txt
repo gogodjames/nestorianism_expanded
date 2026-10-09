@@ -1,0 +1,24 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+uyghur0001 = {
+    history_override_priority = 99
+    name = "Sugr"
+    dynasty = 2003122
+    rite = "zex_arkagun_rite"
+    culture = "uyghur"
+    840.1.1 = {
+        birth = yes
+    }
+}
+
+uyghur0002 = {
+    history_override_priority = 99
+    name = "Bachman"
+    dynasty = 2003122
+    rite = "zex_arkagun_rite"
+    culture = "uyghur"
+    father = uyghur0001
+    860.1.1 = {
+        birth = yes
+    }
+}

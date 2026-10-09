@@ -1,0 +1,277 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+175100 = {
+    history_override_priority = 99
+    name = "KulacE_kara"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189048
+    826.1.1 = {
+        birth = "826.1.1"
+    }
+}
+
+189049 = {
+    history_override_priority = 99
+    name = "VicayA_raka"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 175100
+    850.1.1 = {
+        birth = "850.1.1"
+    }
+}
+
+189050 = {
+    history_override_priority = 99
+    name = "KE_ralakecan"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189049
+    880.1.1 = {
+        birth = "880.1.1"
+    }
+}
+
+189051 = {
+    history_override_priority = 99
+    name = "Indu_Kota"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189050
+    900.1.1 = {
+        birth = "900.1.1"
+    }
+}
+
+189052 = {
+    history_override_priority = 99
+    name = "Manukuladilya"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189051
+    940.1.1 = {
+        birth = "940.1.1"
+    }
+}
+
+189053 = {
+    history_override_priority = 99
+    name = "IrA_cacimman"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189052
+    970.1.1 = {
+        birth = "970.1.1"
+    }
+}
+
+189054 = {
+    history_override_priority = 99
+    name = "IrA_carA_ca"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189053
+    1000.1.1 = {
+        birth = "1000.1.1"
+    }
+}
+
+189055 = {
+    history_override_priority = 99
+    name = "IrA_cA_titta"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189053
+    1005.1.1 = {
+        birth = "1005.1.1"
+    }
+}
+
+189056 = {
+    history_override_priority = 99
+    name = "Ranatitta"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189053
+    1010.1.1 = {
+        birth = "1010.1.1"
+    }
+}
+
+189057 = {
+    history_override_priority = 99
+    name = "KulacE_kara"
+    dynasty = 1043010
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189056
+    1040.1.1 = {
+        birth = "1040.1.1"
+    }
+}
+
+189407 = {
+    history_override_priority = 99
+    name = "Karunandadakkan"
+    dynasty = 10290900
+    rite = "shaivism"
+    culture = "nex_malayali"
+    father = 189406
+    800.1.1 = {
+        birth = "800.1.1"
+    }
+}
+
+malabari_vassal01 = {
+    history_override_priority = 99
+    name = Manavepala
+    dynasty = tamil_manaviyan
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1022.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal02 = {
+    history_override_priority = 99
+    name = Ramakuta
+    dynasty = tamil_muvar
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1018.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal03 = {
+    history_override_priority = 99
+    name = Venattadikal
+    dynasty = tamil_venadi
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1012.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal04 = {
+    history_override_priority = 99
+    name = Ravi
+    dynasty = tamil_chirikandan
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1009.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal05 = {
+    history_override_priority = 99
+    name = Kumaran
+    dynasty = tamil_yakkan
+    rite = "zex_nasrani_rite"
+    culture = "nex_malayali"
+    1012.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal06 = {
+    history_override_priority = 99
+    name = Kantan_Kumaran
+    dynasty = tamil_maluvakkon
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1010.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal07 = {
+    history_override_priority = 99
+    name = Raman
+    dynasty = tamil_kotavarman
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1025.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal08 = {
+    history_override_priority = 99
+    name = Raman
+    dynasty = tamil_munjinadi
+    rite = "shaivism"
+    culture = "nex_malayali"
+    female = yes
+    1015.1.1 = {
+        birth = yes
+    }
+}
+
+malabari_vassal09 = {
+    history_override_priority = 99
+    name = Munjimarayar
+    dynasty = tamil_munjinadi
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1005.1.1 = {
+        birth = yes
+    }
+}
+
+venad_chera_1 = {
+    history_override_priority = 99
+    name = "Udaya"
+    dynasty = tamil_venad_chera
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1149.1.1 = {
+        birth = yes
+    }
+}
+
+chola_vassal_1 = {
+    history_override_priority = 99
+    name = "PantA_ram"
+    dynasty = tamil_shankar
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1132.1.1 = {
+        birth = yes
+    }
+}
+
+chola_vassal_2 = {
+    history_override_priority = 99
+    name = "Tennavan"
+    dynasty = tamil_prasad
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1137.1.1 = {
+        birth = yes
+    }
+}
+
+chola_vassal_3 = {
+    history_override_priority = 99
+    name = "Varakunan"
+    dynasty = tamil_nayak
+    rite = "shaivism"
+    culture = "nex_malayali"
+    1136.1.1 = {
+        birth = yes
+    }
+}

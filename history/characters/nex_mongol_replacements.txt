@@ -1,0 +1,272 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+125505 = {
+    history_override_priority = 99
+    name = "Sartag"
+    dynasty = 11100
+    rite = "tengri_pagan"
+    culture = "mongol"
+    father = 125503
+    1223.1.2 = {
+        birth = "1223.1.2"
+    }
+    1254.1.2 = {
+        rite = zex_arkagun_rite
+    }
+}
+
+125522 = {
+    history_override_priority = 99
+    name = "Baidu"
+    dynasty = 11100
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    father = 125521
+    1255.1.2 = {
+        birth = "1255.1.2"
+    }
+}
+
+125523 = {
+    history_override_priority = 99
+    name = "Teguder"
+    dynasty = 11100
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    father = 478011
+    1238.1.2 = {
+        birth = "1238.1.2"
+    }
+}
+
+125524 = {
+    history_override_priority = 99
+    name = "Ghazan"
+    dynasty = 11100
+    diplomacy = 8
+    intrigue = 8
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    father = 478008
+    1271.11.5 = {
+        birth = "1271.11.5"
+    }
+}
+
+478010 = {
+    history_override_priority = 99
+    name = "Abaga"
+    dynasty = 11100
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    father = 478011
+    1234.1.1 = {
+        birth = "1234.1.1"
+    }
+}
+
+93462 = {
+    history_override_priority = 99
+    name = "Kitbuqa"
+    dynasty = 7371
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    trait = education_martial_3
+    trait = brave
+    trait = zealous
+    1215.1.1 = {
+        birth = "1215.1.1"
+    }
+}
+
+188914 = {
+    history_override_priority = 99
+    name = "Kuchlug"
+    dynasty = 214011
+    rite = zex_arkagun_rite
+    culture = mongol
+    1175.1.1 = {
+        birth = yes
+    }
+}
+
+217213 = {
+    history_override_priority = 99
+    name = "Bogen"
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    1102.5.19 = {
+        birth = yes
+    }
+}
+
+217214 = {
+    history_override_priority = 99
+    name = "Tamachi"
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217213
+    1132.7.27 = {
+        birth = yes
+    }
+}
+
+217215 = {
+    history_override_priority = 99
+    name = "Khadagh"
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217214
+    1154.11.7 = {
+        birth = yes
+    }
+}
+
+217216 = {
+    history_override_priority = 99
+    name = "Holuikhan"
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    female = yes
+    father = 217214
+    1159.5.12 = {
+        birth = yes
+    }
+}
+
+217217 = {
+    history_override_priority = 99
+    name = "Shiraghul"
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217215
+    1188.5.9 = {
+        birth = yes
+    }
+}
+
+217246 = {
+    history_override_priority = 99
+    name = Khorilartai
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217217
+    1211.3.24 = {
+        birth = yes
+    }
+}
+
+217247 = {
+    history_override_priority = 99
+    name = Mandukhai
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217217
+    female = yes
+    1213.7.12 = {
+        birth = yes
+    }
+}
+
+217259 = {
+    history_override_priority = 99
+    name = Chormakhan
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217246
+    1239.3.11 = {
+        birth = yes
+    }
+}
+
+217260 = {
+    history_override_priority = 99
+    name = Munglig
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217259
+    1264.5.22 = {
+        birth = yes
+    }
+}
+
+217261 = {
+    history_override_priority = 99
+    name = Kokochu
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217260
+    1291.4.15 = {
+        birth = yes
+    }
+}
+
+217262 = {
+    history_override_priority = 99
+    name = Khojin
+    rite = zex_arkagun_rite
+    culture = mongol
+    female = yes
+    1294.3.16 = {
+        birth = yes
+    }
+}
+
+217263 = {
+    history_override_priority = 99
+    name = Ibakha
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217261
+    mother = 217262
+    female = yes
+    1316.3.15 = {
+        birth = yes
+    }
+}
+
+217264 = {
+    history_override_priority = 99
+    name = Oronartai
+    dynasty = 1041001
+    rite = zex_arkagun_rite
+    culture = mongol
+    father = 217261
+    mother = 217262
+    1318.5.12 = {
+        birth = yes
+    }
+}
+
+258102 = {
+    history_override_priority = 99
+    name = "Eljigedei"
+    dynasty = 1100024
+    rite = "zex_arkagun_rite"
+    culture = "mongol"
+    839.1.1 = {
+        birth = yes
+    }
+}
+
+261081 = {
+    history_override_priority = 99
+    name = "Chiledu"
+    dynasty = 1062519
+    rite = zex_arkagun_rite
+    culture = mongol
+    905.1.1 = {
+        birth = yes
+    }
+}

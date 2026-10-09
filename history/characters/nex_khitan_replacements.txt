@@ -1,0 +1,12 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+258100 = {
+    history_override_priority = 99
+    name = "Zhulie"
+    dynasty = 1100022
+    rite = "zex_arkagun_rite"
+    culture = "khitan"
+    1039.1.1 = {
+        birth = yes
+    }
+}

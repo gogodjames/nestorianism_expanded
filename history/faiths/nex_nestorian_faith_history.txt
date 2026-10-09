@@ -1,0 +1,44 @@
+﻿nestorian = {
+    867.1.1 = {
+        main_rite = nestorian
+
+        rites = {
+            zex_nasrani_rite = {}
+            zex_arkagun_rite = {}
+            zex_jingjiao_rite = {}
+        }
+
+        permitted = {
+            tenet_scholasticism
+            tenet_communal_identity
+            tenet_acts_of_apostles
+            tenet_communion
+            tenet_philanthropia
+            tenet_adaptive
+            tenet_eastern_syncretism
+            tenet_asceticism
+            tenet_apostolic_succession
+            tenet_confession
+            tenet_divine_liturgy
+            tenet_literalism
+            tenet_dulia
+        }
+
+        prohibited = {
+            tenet_miaphysitism
+            tenet_monophysitism
+            tenet_gnosticism
+            tenet_adoptionism # Definitely not allowed, I don't know why paradox put this in known
+        }
+
+        known = {
+            tenet_legalism
+            tenet_religious_legal_pronouncements
+            tenet_simony
+            tenet_celestial_hierarchy
+            tenet_ora_et_labora
+            tenet_aniconism
+            tenet_sinitic_syncretism
+        }
+    }
+}
