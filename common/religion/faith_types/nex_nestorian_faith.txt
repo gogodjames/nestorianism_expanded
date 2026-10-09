@@ -1,0 +1,46 @@
+﻿nestorian = {
+	main_rite = nestorian
+	faith_details = {
+		religion = christianity_religion
+		color = { 0.8 0.3 0.5 }
+		graphical_faith = "orthodox_gfx"
+		religious_head = d_patriarchate_in_the_east
+		head_of_rite = d_patriarchate_in_the_east
+	}
+
+	eminent_holy_sites = {
+		jerusalem
+		baghdad
+		kerala
+	}
+
+	holy_sites = {
+		kara_khorum
+		farz
+		antioch
+	}
+
+	tenets = {
+		tenet_adaptive
+		tenet_acts_of_apostles
+		tenet_mendicant_preachers
+	}
+
+	doctrines = {
+		doctrine_monasticism_accepted
+		doctrine_pluralism_pluralistic
+		doctrine_anointment_permitted
+		special_doctrine_ecumenical_christian
+	}
+
+	holy_order_names = {
+		{ name = "holy_order_order_of_saint_addai" }
+	}
+
+	localization = { # Utilizes the 'West Christian' Saints, shared by Catholics and Orthodox
+		# Patriarchs instead of Popes
+		ReligiousHeadName = nestorian_religious_head_title
+		ReligiousHeadNameFemale = nestorian_religious_head_title_female
+		ReligiousHeadTitleName = nestorian_religious_head_title_name
+	}
+}
