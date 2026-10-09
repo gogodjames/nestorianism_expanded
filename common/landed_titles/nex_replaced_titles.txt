@@ -1,0 +1,25 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+@never_primary_score = -1000
+
+d_patriarchate_in_the_east = {
+	color = { 180 137 97 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	allow_domicile = no
+
+	capital = c_baghdad
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+	can_use_nomadic_naming = no
+    
+	disable_regnal_numbers = never
+}

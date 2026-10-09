@@ -5,6 +5,9 @@ on_game_start = {
 
 nex_on_game_start = {
     effect = {
+        # Patriarch Flavour
+        title:d_patriarchate_in_the_east = { set_coa = nex_patriarch_coa }
+
         # Malayali culture
         title:c_alupa = { set_county_culture = culture:nex_malayali }
         title:c_eranad = { set_county_culture = culture:nex_malayali }
