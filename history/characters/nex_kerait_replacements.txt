@@ -1,0 +1,341 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+303208 = {
+    history_override_priority = 99
+    name = "Marguz"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303226
+    1061.1.2 = {
+        birth = yes
+    }
+}
+
+303209 = {
+    history_override_priority = 99
+    name = "Kurchakus"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303208
+    1084.1.2 = {
+        birth = yes
+    }
+}
+
+303210 = {
+    history_override_priority = 99
+    name = "Erke_kara"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303209
+    mother = 303206
+    1125.1.2 = {
+        birth = yes
+    }
+}
+
+303211 = {
+    history_override_priority = 99
+    name = "Togrul"
+    dna = "bookmark_nomads_togrul_303211"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    diplomacy = 3
+    martial = 4
+    stewardship = 8
+    intrigue = 6
+    learning = 4
+    prowess = 10
+    trait = education_intrigue_2
+    trait = callous
+    trait = stubborn
+    trait = deceitful
+    trait = lifestyle_hunter
+    father = 303209
+    mother = 303206
+    1130.1.2 = {
+        birth = yes
+    }
+}
+
+303212 = {
+    history_override_priority = 99
+    name = "Bukha_Timur"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303209
+    mother = 303206
+    1140.1.2 = {
+        birth = yes
+    }
+}
+
+303213 = {
+    history_override_priority = 99
+    name = "Tai_Timur"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303209
+    mother = 303206
+    1150.1.2 = {
+        birth = yes
+    }
+}
+
+303214 = {
+    history_override_priority = 99
+    name = "Jakha_Gambhu"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303209
+    mother = 303206
+    1155.1.1 = {
+        birth = yes
+    }
+}
+
+303215 = {
+    history_override_priority = 99
+    name = "Oghuul"
+    dna = "bookmark_nomads_toghrul_oghuul_31202"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303211
+    mother = 303219
+    1161.1.2 = {
+        birth = yes
+    }
+}
+
+303216 = {
+    history_override_priority = 99
+    name = "Ilqa_Sangun"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303211
+    mother = 303219
+    1168.1.2 = {
+        birth = yes
+    }
+}
+
+303217 = {
+    history_override_priority = 99
+    name = "Chaur_Baqi"
+    female = yes
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303211
+    mother = 303219
+    1172.1.2 = {
+        birth = yes
+    }
+}
+
+303218 = {
+    history_override_priority = 99
+    name = "Ibakha"
+    female = yes
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303214
+    1185.1.2 = {
+        birth = yes
+    }
+}
+
+172010 = {
+    history_override_priority = 99
+    name = "Sorkhaghatani"
+    dynasty = 1041002
+    rite = zex_arkagun_rite
+    culture = kerait
+    female = yes
+    trait = ambitious
+    father = 303214
+    1190.1.1 = {
+        birth = yes
+    }
+}
+
+303219 = {
+    history_override_priority = 99
+    name = "Yazada"
+    female = yes
+    rite = zex_arkagun_rite
+    culture = kerait
+    1135.1.2 = {
+        birth = yes
+    }
+}
+
+303226 = {
+    history_override_priority = 99
+    name = "Inanch"
+    dynasty = 1041002
+    dna = bookmark_nomads_inanch_303226
+    rite = zex_arkagun_rite
+    culture = kerait
+    martial = 8
+    diplomacy = 12
+    intrigue = 10
+    stewardship = 7
+    learning = 12
+    prowess = 8
+    trait = zealous
+    trait = brave
+    trait = temperate
+    trait = education_learning_4
+    trait = lifestyle_hunter
+    1034.1.2 = {
+        birth = yes
+    }
+}
+
+303229 = {
+    history_override_priority = 99
+    name = "Ciriac"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    1043.2.11 = {
+        birth = yes
+    }
+}
+
+303230 = {
+    history_override_priority = 99
+    name = "Tooril"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303229
+    1069.5.11 = {
+        birth = yes
+    }
+}
+
+303231 = {
+    history_override_priority = 99
+    name = "Oghuul"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303230
+    1091.4.5 = {
+        birth = yes
+    }
+}
+
+303232 = {
+    history_override_priority = 99
+    name = "Tayan"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    stewardship = 6
+    father = 303231
+    1115.11.3 = {
+        birth = yes
+    }
+}
+
+303233 = {
+    history_override_priority = 99
+    name = "Taibuka"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303232
+    1139.12.30 = {
+        birth = yes
+    }
+}
+
+303234 = {
+    history_override_priority = 99
+    name = "Qatarqa"
+    dynasty = 2001154
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303233
+    1160.11.8 = {
+        birth = yes
+    }
+}
+
+303235 = {
+    history_override_priority = 99
+    name = "Elkutur"
+    dynasty = 2001155
+    rite = zex_arkagun_rite
+    culture = kerait
+    1119.3.15 = {
+        birth = yes
+    }
+}
+
+303236 = {
+    history_override_priority = 99
+    name = "Jagambu"
+    dynasty = 2001155
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303235
+    1142.6.17 = {
+        birth = yes
+    }
+}
+
+303237 = {
+    history_override_priority = 99
+    name = "Gur"
+    dynasty = 2001155
+    rite = zex_arkagun_rite
+    culture = kerait
+    father = 303236
+    1162.1.10 = {
+        birth = yes
+    }
+}
+
+fictional_keraits_2 = {
+    history_override_priority = 99
+    name = "Elkutur"
+    rite = zex_arkagun_rite
+    culture = kerait
+    1122.2.25 = {
+        birth = yes
+    }
+}
+
+fictional_keraits_3 = {
+    history_override_priority = 99
+    name = "Yula_Mangus"
+    rite = zex_arkagun_rite
+    culture = kerait
+    1016.6.2 = {
+        birth = yes
+    }
+}
+
+fictional_keraits_4 = {
+    history_override_priority = 99
+    name = "Gur"
+    rite = zex_arkagun_rite
+    culture = kerait
+    1018.10.21 = {
+        birth = yes
+    }
+}

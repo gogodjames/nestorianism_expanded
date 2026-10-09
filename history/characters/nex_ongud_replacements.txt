@@ -1,0 +1,371 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+305795 = {
+    history_override_priority = 99
+    name = "Rabban_Bar_C_auma"
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    trait = education_learning_3
+    1220.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0001 = {
+    history_override_priority = 99
+    name = "Otrok"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    740.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0002 = {
+    history_override_priority = 99
+    name = "Ituk"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0001
+    760.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0003 = {
+    history_override_priority = 99
+    name = "Saru"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0002
+    780.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0004 = {
+    history_override_priority = 99
+    name = "Sotan"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0003
+    800.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0005 = {
+    history_override_priority = 99
+    name = "Kolo"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0004
+    820.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0006 = {
+    history_override_priority = 99
+    name = "C_ur"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0005
+    840.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0007 = {
+    history_override_priority = 99
+    name = "Ele"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0006
+    860.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0008 = {
+    history_override_priority = 99
+    name = "Beka"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0007
+    880.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0009 = {
+    history_override_priority = 99
+    name = "Arbuz"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0008
+    900.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0010 = {
+    history_override_priority = 99
+    name = "Sugr"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0009
+    920.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0011 = {
+    history_override_priority = 99
+    name = "Zeyhan"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0010
+    940.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0012 = {
+    history_override_priority = 99
+    name = "Gzak"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0011
+    960.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0013 = {
+    history_override_priority = 99
+    name = "Kozel"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0012
+    980.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0014 = {
+    history_override_priority = 99
+    name = "Togli"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0013
+    1000.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0015 = {
+    history_override_priority = 99
+    name = "Kobyak"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0014
+    1020.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0016 = {
+    history_override_priority = 99
+    name = "Asep"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0015
+    1040.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0017 = {
+    history_override_priority = 99
+    name = "Eltut"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0016
+    1060.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0018 = {
+    history_override_priority = 99
+    name = "Blush"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0017
+    1080.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0019 = {
+    history_override_priority = 99
+    name = "Chilbuk"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0018
+    1100.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0020 = {
+    history_override_priority = 99
+    name = "Kutesk"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0019
+    1120.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0021 = {
+    history_override_priority = 99
+    name = "C_auma"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0020
+    1140.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0022 = {
+    history_override_priority = 99
+    name = "Sharaga"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0021
+    1160.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0023 = {
+    history_override_priority = 99
+    name = "Menk"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0022
+    1180.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0024 = {
+    history_override_priority = 99
+    name = "Menk"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0023
+    1200.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0025 = {
+    history_override_priority = 99
+    name = "Kopti"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0024
+    1220.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0026 = {
+    history_override_priority = 99
+    name = "Itlar"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0025
+    1240.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0027 = {
+    history_override_priority = 99
+    name = "Bilge"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0026
+    1260.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0028 = {
+    history_override_priority = 99
+    name = "Jamuqa"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0027
+    1280.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0029 = {
+    history_override_priority = 99
+    name = "Inanch"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0028
+    1300.1.1 = {
+        birth = yes
+    }
+}
+
+ongud0030 = {
+    history_override_priority = 99
+    name = "Gur"
+    dynasty = 2003102
+    rite = "zex_arkagun_rite"
+    culture = "ongud"
+    father = ongud0029
+    1320.1.1 = {
+        birth = yes
+    }
+}

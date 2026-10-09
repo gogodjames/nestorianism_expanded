@@ -1,0 +1,72 @@
+﻿# Targeted character history overrides; unchanged dated history is supplied by vanilla.
+
+karluk0059 = {
+    history_override_priority = 99
+    name = "Malamir"
+    dynasty = karluk_fictional_nestorian
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    832.1.1 = {
+        birth = yes
+    }
+}
+
+188845 = {
+    history_override_priority = 99
+    name = "Aepak"
+    dynasty = 1042186
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    father = 188844
+    1085.1.1 = {
+        birth = yes
+    }
+}
+
+188846 = {
+    history_override_priority = 99
+    name = "Uzur"
+    dynasty = 1042186
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    father = 188845
+    1110.1.1 = {
+        birth = yes
+    }
+}
+
+188847 = {
+    history_override_priority = 99
+    name = "Girgen"
+    dynasty = 1042186
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    father = 188846
+    1135.1.1 = {
+        birth = yes
+    }
+}
+
+188848 = {
+    history_override_priority = 99
+    name = "Begluk"
+    dynasty = 1042186
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    father = 188847
+    1160.1.1 = {
+        birth = yes
+    }
+}
+
+188849 = {
+    history_override_priority = 99
+    name = "Girgen"
+    dynasty = 1042186
+    rite = "zex_arkagun_rite"
+    culture = "karluk"
+    father = 188848
+    1185.1.1 = {
+        birth = yes
+    }
+}
