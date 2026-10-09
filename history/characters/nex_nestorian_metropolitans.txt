@@ -26,9 +26,7 @@ nex_beth_huzaye_stephen = {
 	1090.1.1 = { death = yes } # Estimated
 }
 
-# Historical identities with reconstructed bookmark tenures.
-# All birth/death dates below are gameplay estimates, not historical attestations.
-# Births default to 45 years before the reconstructed assignment.
+
 # Maishan: https://en.wikipedia.org/wiki/Maishan_(East_Syriac_ecclesiastical_province)
 # Nisibis: https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)
 # Hulwan: https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
@@ -122,4 +120,295 @@ nex_beth_garmai_eliya_1178 = {
 	trait = education_learning_3
 	1133.1.1 = { birth = yes } # Estimated
 	1200.1.1 = { death = yes } # Estimated
+}
+
+# Additional researched holders first attested by 1178.
+
+# Consecrated 26 December 1008; died 18 July 1046. These tenure dates are attested.
+# https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)
+nex_nisibis_eliya_1008 = {
+	name = "Eliya"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	963.12.26 = { birth = yes } # Estimated
+	1046.7.18 = { death = yes } # Attested
+}
+
+# Appointed in 1074; died a few days later. Exact January dates are reconstructed.
+# https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)
+nex_nisibis_giwargis_1074 = {
+	name = "Giwargis"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1029.1.2 = { birth = yes } # Estimated
+	1074.1.7 = { death = yes } # Estimated
+}
+
+# Succeeded Giwargis in 1074. Exact appointment date and end of tenure are reconstructed.
+# https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)
+nex_nisibis_ibn_hammad_1074 = {
+	name = "nex_name_ibn_hammad"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1029.1.8 = { birth = yes } # Estimated
+	1094.1.8 = { death = yes } # Estimated
+}
+
+# Appointed to Mosul and Erbil under Eliya III (1176-1190); assignment in 1178 is reconstructed.
+# https://en.wikipedia.org/wiki/Adiabene_(East_Syriac_ecclesiastical_province)
+nex_adiabene_tittos_1178 = {
+	name = "nex_name_tittos"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1133.1.1 = { birth = yes } # Estimated
+	1210.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Beth Daraye and Kashkar; metropolitan in the 1018/19 Chronography.
+# https://en.wikipedia.org/wiki/Beth_Garma%C3%AF_(East_Syriac_ecclesiastical_province)
+nex_beth_garmai_shemon_1018 = {
+	name = "Shem_on"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	973.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# David ibn Barsaha, appointed shortly after Abdisho II in 1074. The exact appointment day is estimated.
+# https://en.wikipedia.org/wiki/Beth_Garma%C3%AF_(East_Syriac_ecclesiastical_province)
+nex_beth_garmai_david_1074 = {
+	name = "David"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1029.1.2 = { birth = yes } # Estimated
+	1094.1.1 = { death = yes } # Estimated
+}
+
+# Formerly metropolitan of Ilam; appointed under Eliya II (1111-1132). Start and end are reconstructed.
+# https://en.wikipedia.org/wiki/Beth_Garma%C3%AF_(East_Syriac_ecclesiastical_province)
+nex_beth_garmai_thomas_1111 = {
+	name = "Thomas"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1066.1.1 = { birth = yes } # Estimated
+	1152.1.1 = { death = yes } # Estimated
+}
+
+# Metropolitan in 884 and 893; compiler of the Syriac nomocanon.
+# https://en.wikipedia.org/wiki/Maishan_(East_Syriac_ecclesiastical_province)
+nex_maishan_gabriel_884 = {
+	name = "Gabriel"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	839.1.1 = { birth = yes } # Estimated
+	913.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Shahrzur/Shahrgard; appointed under Mari (987-999), and attested in 1018/19. Start is reconstructed.
+# https://en.wikipedia.org/wiki/Maishan_(East_Syriac_ecclesiastical_province)
+nex_maishan_abraham_987 = {
+	name = "Abraham"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	942.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Susa; appointed 15 July 893. Appointment date is attested.
+# https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
+nex_hulwan_ishoyahb_893 = {
+	name = "Isho_yahb"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	848.7.15 = { birth = yes } # Estimated
+	913.7.15 = { death = yes } # Estimated
+}
+
+# Present at Emmanuel I's consecration on 23 February 938; beginning of tenure is unknown.
+# https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
+nex_hulwan_ishodad_938 = {
+	name = "nex_name_ishodad"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	893.2.23 = { birth = yes } # Estimated
+	958.2.23 = { death = yes } # Estimated
+}
+
+# Mari of Fars, formerly bishop of Dinawar; metropolitan of Hulwan in the 1018/19 Chronography.
+# https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
+nex_hulwan_mari_1018 = {
+	name = "Mari"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	973.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# Attested in 1092 and possibly again in 1111. Identification as one person is provisional.
+# https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
+nex_hulwan_yohannan_1092 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1047.1.1 = { birth = yes } # Estimated
+	1131.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Qardu; appointed 15 July 893 and attested in 900. Appointment date is attested.
+# https://en.wikipedia.org/wiki/Beth_Huzaye_(East_Syriac_ecclesiastical_province)
+nex_beth_huzaye_theodore_893 = {
+	name = "Theodore"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	848.7.15 = { birth = yes } # Estimated
+	920.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Beth Huzaye (Hormizd Ardashir); metropolitan of Ilam in 1018/19.
+# https://en.wikipedia.org/wiki/Beth_Huzaye_(East_Syriac_ecclesiastical_province)
+nex_beth_huzaye_emmanuel_1018 = {
+	name = "Emmanuel"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	973.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Balad; appointed under Abdisho II (1074-1090). Exact appointment and end are reconstructed.
+# https://en.wikipedia.org/wiki/Beth_Huzaye_(East_Syriac_ecclesiastical_province)
+nex_beth_huzaye_sabrisho_1074 = {
+	name = "Sabrisho"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1029.1.2 = { birth = yes } # Estimated
+	1110.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Balad; appointed under Sargis (860-872). Assignment in 867 is reconstructed; see also the Nisibis province account.
+# https://en.wikipedia.org/wiki/Merv_(East_Syriac_ecclesiastical_province)
+# https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)#Diocese_of_Balad
+nex_merv_yohannan_867 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	822.1.1 = { birth = yes } # Estimated
+	892.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Ispahan; appointed under Mari (987-999), and attested in 1018/19. Start is reconstructed.
+# https://en.wikipedia.org/wiki/Merv_(East_Syriac_ecclesiastical_province)
+nex_merv_abdisho_987 = {
+	name = "Abdisho"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	942.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# Metropolitan under Sabrisho III (1064-1072). Assignment in 1064 is reconstructed.
+# https://en.wikipedia.org/wiki/Merv_(East_Syriac_ecclesiastical_province)
+nex_herat_giwargis_1064 = {
+	name = "Giwargis"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1019.1.1 = { birth = yes } # Estimated
+	1092.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Zabe; appointed under Mari (987-999) and died shortly afterward. Exact dates are reconstructed.
+# https://en.wikipedia.org/wiki/Fars_(East_Syriac_ecclesiastical_province)
+nex_fars_shlemun_987 = {
+	name = "nex_name_shlemun"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	942.1.1 = { birth = yes } # Estimated
+	987.12.31 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Shenna; succeeded Shlemun under Mari (987-999). Assignment in 988 is reconstructed.
+# https://en.wikipedia.org/wiki/Fars_(East_Syriac_ecclesiastical_province)
+nex_fars_yohannan_shenna_988 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	943.1.1 = { birth = yes } # Estimated
+	1008.1.1 = { death = yes } # Estimated
+}
+
+# Formerly bishop of Egypt; metropolitan of Fars in 1018/19. Kept distinct from Yohannan of Shenna.
+# https://en.wikipedia.org/wiki/Fars_(East_Syriac_ecclesiastical_province)
+nex_fars_yohannan_egypt_1018 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	973.1.1 = { birth = yes } # Estimated
+	1039.1.1 = { death = yes } # Estimated
+}
+
+# Present at Abdisho III's consecration in 1139; beginning of tenure is unknown.
+# https://en.wikipedia.org/wiki/Fars_(East_Syriac_ecclesiastical_province)
+nex_fars_abdisho_1139 = {
+	name = "Abdisho"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1094.1.1 = { birth = yes } # Estimated
+	1159.1.1 = { death = yes } # Estimated
+}
+
+# Traditional account places metropolitan Yohannan at Cranganore around 880. Identity and dating are less secure than documentary attestations.
+# https://en.wikipedia.org/wiki/India_(East_Syriac_ecclesiastical_province)
+nex_india_yohannan_880 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = zex_nasrani_rite
+	culture = assyrian
+	trait = education_learning_3
+	835.1.1 = { birth = yes } # Estimated
+	900.1.1 = { death = yes } # Estimated
 }

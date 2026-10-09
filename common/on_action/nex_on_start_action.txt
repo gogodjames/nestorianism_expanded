@@ -28,5 +28,9 @@ nex_on_game_start = {
                 set_county_rite = rite:zex_arkagun_rite
             }
         }
+
+        # Generate Holders for the ones that don't have historical ones at the time
+        give_interior_provinces_holders_effect = yes # Mesopotamia/Persia
+        give_exterior_provinces_holders_effect = yes # Elsewhere
     }
 }
