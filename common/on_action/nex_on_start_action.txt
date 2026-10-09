@@ -17,15 +17,24 @@ nex_on_game_start = {
         # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
         rite:nestorian = {
             every_rite_county = {
-                limit = {
-                    culture ?= {
-                        OR = {
-                            has_cultural_pillar = heritage_mongolic
-                            has_cultural_pillar = heritage_turkic
+                # Steppe Christians
+                if = { 
+                    limit = {
+                        culture ?= {
+                            OR = {
+                                has_cultural_pillar = heritage_mongolic
+                                has_cultural_pillar = heritage_turkic
+                            }
                         }
                     }
+                    set_county_rite = rite:zex_arkagun_rite
                 }
-                set_county_rite = rite:zex_arkagun_rite
+                # Socotra
+                else_if = {
+                    limit = { title:c_socotra ?= this }
+                    set_county_rite = rite:zex_socotran_rite
+                }
+                else = {} # Stay Mainline
             }
         }
 

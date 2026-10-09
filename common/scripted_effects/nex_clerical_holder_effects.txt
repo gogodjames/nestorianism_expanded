@@ -1,6 +1,5 @@
 ﻿# Required scope: rite. Parameters: TITLE (landed title), CULTURE (culture scope).
-# Only vacant, active clerical regions are installed; existing holders are preserved.
-# The faith and employer come from this rite, never from ROOT or a fixed patriarchate.
+# Holder comes from the current rite scope
 nex_create_clerical_holder_effect = {
 	if = {
 		limit = {
@@ -94,6 +93,10 @@ give_exterior_provinces_holders_effect = {
 			TITLE = title:d_nex_et_fars
 			CULTURE = title:d_nex_et_fars.title_preferred_capital_county.culture
 		}
+	}
+
+	# Socotra
+	rite:zex_socotran_rite = {
 		nex_create_clerical_holder_effect = {
 			TITLE = title:d_nex_et_socotra
 			CULTURE = title:d_nex_et_socotra.title_preferred_capital_county.culture
