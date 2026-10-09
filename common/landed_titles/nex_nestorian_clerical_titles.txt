@@ -1,0 +1,165 @@
+﻿@never_primary_score = -1000
+
+####################
+## NASRANI TITLES
+####################
+d_nex_et_india = {
+	color = { 65 170 165 }
+	capital = c_kerala
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+
+}
+
+# Bishopric
+d_nex_et_kalyan = {
+	color = { 45 95 165 }
+	capital = c_surparaka
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+
+####################
+## CLERICAL TITLES
+####################
+# Nisibis, alternatively Beth Arabaye, is seated in Nasibin.
+d_nex_et_nisibis = {
+	color = { 65 170 165 }
+	capital = c_nasibin
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Adiabene, alternatively Mosul & Erbil (called so because the seat was originally in Erbil but had moved to Mosul), was seated in Mosul.  It also flourished during the CK3 period
+d_nex_et_adiabene = {
+	color = { 145 180 80 }
+	capital = c_mosul
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Beth Garmai, alternatively Karka, was seated in Kirkuk.  It is the smallest in part because the Province of the Patriarch had already taken a lot of its territory before the first start date
+d_nex_et_beth_garmai = {
+	color = { 205 170 75 }
+	capital = c_kirkuk
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Maishan is seated in Basra.  This one struggled the most during the CK3 period.  Only just barely existing in all 3 start dates.
+d_nex_et_maishan = {
+	color = { 75 145 205 }
+	capital = c_basra
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Hulwan, alternatively Media, was seated in Hulwan (the last summer capital of the Sassanid Empire).
+# It managed to gain enough influence to become a interior province before the start of the CK3 time period.
+# But suffered a lot during the CK3 time period, with Hamadan eventually become the seat around the last start date.  It also shrank of the CK3 time period
+d_nex_et_hulwan = {
+	color = { 145 105 185 }
+	capital = c_hulwan
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Beth Huzaye, alternatively Elam, is seated in Gondishapur (b_gondishapur in c_tustar), a center of learning. Its metropolitan tried to move the seat to Ahvaz, but the locals of Gondishapur would not let him leave.
+# This province did shrink over the CK3 period.  Because other archdiocese have their max borders (e.g. Carthage), thus shown is  Beth Huzaye's max borders.
+# Also unclear if c_saimara is a part of this ecclesiastical province, but I gave it to Beth Huzaye as it seems to be the most likely
+d_nex_et_beth_huzaye = {
+	color = { 205 120 100 }
+	capital = c_tustar
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Merv's metropolitanate is historical in 867 and 1066 and restorable thereafter.
+d_nex_et_merv = {
+	color = { 140 35 60 }
+	capital = c_merv
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# Exterior sees
+d_nex_et_herat = {
+	color = { 70 150 100 }
+	capital = c_herat
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nex_et_samarkand = {
+	color = { 175 75 130 }
+	capital = c_samarkand
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nex_et_fars = {
+	color = { 95 110 190 }
+	capital = c_mandestan # Roughly Rev Ardashir?
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nex_et_socotra = {
+	color = { 142 255 85 }
+	capital = c_socotra
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}

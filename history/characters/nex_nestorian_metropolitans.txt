@@ -1,0 +1,125 @@
+﻿# These metropolitans are attested, but their birth dates are estimated.
+nex_adiabene_yahballaha = {
+	name = "Yahballaha"
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1025.1.1 = { birth = yes } # Estimated
+	1085.1.1 = { death = yes }
+}
+
+nex_maishan_giwargis = {
+	name = "Giwargis"
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1025.1.1 = { birth = yes } # Estimated
+	1080.1.1 = { death = yes } # Estimated within Abdisho II's reign
+}
+
+nex_beth_huzaye_stephen = {
+	name = "Stephen"
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1020.1.1 = { birth = yes } # Estimated
+	1090.1.1 = { death = yes } # Estimated
+}
+
+# Historical identities with reconstructed bookmark tenures.
+# All birth/death dates below are gameplay estimates, not historical attestations.
+# Births default to 45 years before the reconstructed assignment.
+# Maishan: https://en.wikipedia.org/wiki/Maishan_(East_Syriac_ecclesiastical_province)
+# Nisibis: https://en.wikipedia.org/wiki/Nisibis_(East_Syriac_ecclesiastical_province)
+# Hulwan: https://en.wikipedia.org/wiki/Hulwan_(East_Syriac_ecclesiastical_province)
+# Beth Garmai: https://en.wikipedia.org/wiki/Beth_Garma%C3%AF_(East_Syriac_ecclesiastical_province)
+
+# Isho'dnah probably held Maishan in the 860s-870s; an earlier tenure is also possible.
+nex_maishan_ishodnah_867 = {
+	name = "nex_name_ishodnah"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	822.1.1 = { birth = yes } # Estimated
+	883.1.1 = { death = yes } # Estimated; Gabriel is attested in 884
+}
+
+# Qayyoma was a disciple of Sargis (860-872), and is placed around 870.
+nex_nisibis_qayyoma_867 = {
+	name = "Qayyoma"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	822.1.1 = { birth = yes } # Estimated
+	880.1.1 = { death = yes } # Estimated
+}
+
+# Named in an 1186 lectionary colophon; assignment in 1178 is reconstructed.
+# https://www.uplopen.com/chapters/10715/files/a221c732-17a2-49cc-97f9-93381ebc5cf9.pdf
+nex_nisibis_yahballaha_1178 = {
+	name = "Yahballaha"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1133.1.1 = { birth = yes } # Estimated
+	1196.1.1 = { death = yes } # Estimated
+}
+
+# Stephen was appointed to Hulwan under Sargis (860-872).
+nex_hulwan_stephen_867 = {
+	name = "Stephen"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	822.1.1 = { birth = yes } # Estimated
+	880.1.1 = { death = yes } # Estimated
+}
+
+# Metropolitan of Hulwan and Rai in 1074; assignment in 1064 is reconstructed.
+nex_hulwan_abd_al_masih_1064 = {
+	name = "nex_name_abd_al_masih"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1019.1.1 = { birth = yes } # Estimated
+	1080.1.1 = { death = yes } # Estimated within Abdisho II's reign
+}
+
+# Yohannan of Hulwan and Hamadan flourished under Eliya III (1176-1190).
+nex_hulwan_yohannan_1178 = {
+	name = "Yohannan"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1133.1.1 = { birth = yes } # Estimated
+	1200.1.1 = { death = yes } # Estimated
+}
+
+# Present at Abdisho II's consecration in 1074; assignment in 1064 is reconstructed.
+# This is a different metropolitan from Yahballaha of Adiabene.
+nex_beth_garmai_yahballaha_1064 = {
+	name = "Yahballaha"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1019.1.1 = { birth = yes } # Estimated
+	1074.1.1 = { death = yes } # Estimated; David was appointed in 1074
+}
+
+# Present at Yahballaha II's consecration in 1190; assignment in 1178 is reconstructed.
+nex_beth_garmai_eliya_1178 = {
+	name = "Eliya"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	1133.1.1 = { birth = yes } # Estimated
+	1200.1.1 = { death = yes } # Estimated
+}

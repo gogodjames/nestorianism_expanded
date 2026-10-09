@@ -1,0 +1,128 @@
+﻿d_nex_et_nisibis = {
+	867.1.1 = {
+		holder = nex_nisibis_qayyoma_867 # Reconstructed from his activity around 870
+		government = ecclesiastical_government
+		clerical_region = nex_et_nisibis_region
+	}
+	880.1.1 = { holder = 0 } # Estimated end of tenure
+	1066.1.1 = { holder = patriarch_in_the_east_70 } # Abdisho, later patriarch
+	1072.1.1 = { holder = 0 } # Matches the vanilla patriarchate history
+	1178.1.1 = { holder = nex_nisibis_yahballaha_1178 } # Reconstructed; attested in 1186
+	1196.1.1 = { holder = 0 } # Estimated end of tenure
+}
+
+d_nex_et_adiabene = {
+	867.1.1 = {
+		holder = 166296 # Enosh, later patriarch
+		government = ecclesiastical_government
+		clerical_region = nex_et_adiabene_region
+	}
+	877.6.1 = { holder = 0 } # Enosh becomes patriarch in vanilla history
+	1064.1.1 = { holder = nex_adiabene_yahballaha }
+	1085.1.1 = { holder = 0 } # Yahballaha died in 1085
+}
+
+d_nex_et_beth_garmai = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_beth_garmai_region
+	}
+	1064.1.1 = { holder = nex_beth_garmai_yahballaha_1064 } # Reconstructed; attested in 1074
+	1074.1.1 = { holder = 0 } # Estimated end; David was appointed in 1074
+	1178.1.1 = { holder = nex_beth_garmai_eliya_1178 } # Reconstructed; attested in 1190
+	1200.1.1 = { holder = 0 } # Estimated end of tenure
+}
+
+d_nex_et_maishan = {
+	867.1.1 = {
+		holder = nex_maishan_ishodnah_867 # Reconstructed from his probable tenure in the 860s-870s
+		government = ecclesiastical_government
+		clerical_region = nex_et_maishan_region
+	}
+	883.1.1 = { holder = 0 } # Estimated end; Gabriel is attested in 884
+	1064.1.1 = { holder = nex_maishan_giwargis }
+	1080.1.1 = { holder = 0 } # Estimated end of tenure
+}
+
+d_nex_et_hulwan = {
+	867.1.1 = {
+		holder = nex_hulwan_stephen_867 # Reconstructed; appointed under Sargis (860-872)
+		government = ecclesiastical_government
+		clerical_region = nex_et_hulwan_region
+	}
+	880.1.1 = { holder = 0 } # Estimated end of tenure
+	1064.1.1 = { holder = nex_hulwan_abd_al_masih_1064 } # Reconstructed; attested in 1074
+	1080.1.1 = { holder = 0 } # Estimated end of tenure
+	1178.1.1 = { holder = nex_hulwan_yohannan_1178 } # Reconstructed from activity under Eliya III
+	1200.1.1 = { holder = 0 } # Estimated end of tenure
+}
+
+d_nex_et_beth_huzaye = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_beth_huzaye_region
+	}
+	1064.1.1 = { holder = nex_beth_huzaye_stephen }
+	1074.1.1 = { holder = 0 } # A successor was appointed during Abdisho II's reign
+}
+
+d_nex_et_merv = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_merv_region
+	}
+	1178.1.1 = {
+		holder = 0
+		#clerical_region = none
+	}
+}
+
+# Exterior sees: continuity between attestations is reconstructed.
+d_nex_et_herat = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_herat_region
+	}
+	1178.1.1 = {
+		holder = 0
+		#clerical_region = none
+	}
+}
+
+d_nex_et_samarkand = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_samarkand_region
+	}
+}
+
+d_nex_et_fars = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_fars_region
+	}
+}
+
+d_nex_et_socotra = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_socotra_region
+	}
+}
+
+# Nasrani regional sees: no unnamed holders are assigned by this mod.
+# Kalyan is retained in all bookmarks by design, not a documented uninterrupted succession.
+d_nex_et_india = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_india_region
+	}
+}
+
+
+d_nex_et_kalyan = {
+	867.1.1 = {
+		government = ecclesiastical_government
+		clerical_region = nex_et_kalyan_region
+	}
+}

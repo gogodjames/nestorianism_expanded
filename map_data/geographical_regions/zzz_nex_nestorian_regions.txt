@@ -1,0 +1,89 @@
+﻿## CLERICAL REGIONS
+
+# Replacement
+et_867_seleucia_ctesiphon_region = {
+	counties = {
+		c_baghdad c_batiha c_iskaf c_wasit c_kufa c_karbala c_badaraya c_anbar c_samarra c_takrit c_hadithat-ana c_rahba c_al-haditha
+	}
+}
+
+nex_et_nisibis_region = {
+	counties = {
+		c_nasibin c_upper_khabur c_tall_basma c_mayyafariqin c_amida c_harran c_raqqa c_sukhna c_khabur c_sinjar
+	}
+}
+
+nex_et_adiabene_region = {
+	counties = {
+		c_mosul c_ninive c_hakkari c_kurdistan c_urmiya c_bailaqan c_irbil
+	}
+}
+
+nex_et_beth_garmai_region = {
+	counties = {
+		c_kirkuk c_shahrazur
+	}
+}
+
+nex_et_maishan_region = {
+	counties = {
+		c_basra c_ubulla c_abbadan c_rusafa
+	}
+}
+
+nex_et_hulwan_region = {
+	counties = {
+		c_hulwan c_masabadhan c_kermanshah c_nihawand c_dinawar c_hamadan
+	}
+}
+
+nex_et_beth_huzaye_region = {
+	counties = {
+		c_ahvaz c_tib c_saimara c_tustar c_ramhurmuz c_dawraq c_sardan c_isfahan c_luristan
+	}
+}
+
+nex_et_merv_region = {
+	counties = {
+		c_merv c_sarakhs c_marvarrud c_abivard c_tus
+	}
+}
+
+nex_et_herat_region = {
+	counties = {
+		c_herat c_bakharz c_badghis c_sabzevar c_zirkuh c_farah c_nih c_zaranj c_rudbar c_bost c_qain
+	}
+}
+
+nex_et_samarkand_region = {
+	counties = {
+		c_samarkand c_dabusiya c_bukhara c_kishsh c_nakhshab c_kalif c_firabr
+	}
+}
+
+nex_et_fars_region = {
+	counties = {
+		c_arrajan c_shiraz c_lar c_darabjerd c_istakhr c_mandestan c_irahistan c_sif-i-umara c_hormuz c_sirjan
+	}
+}
+
+nex_et_socotra_region = {
+	counties = {
+		c_socotra
+	}
+}
+
+nex_et_india_region = {
+	kingdoms = {
+		k_lanka
+	}
+	counties = {
+		c_kanchipuram c_madurai c_uraiyur c_cholamandalam c_tiruvannamalai c_kanara c_alupa c_eranad c_kerala c_venadu
+	}
+}
+
+nex_et_kalyan_region = {
+	counties = {
+		c_surparaka c_panaji
+	}
+}
