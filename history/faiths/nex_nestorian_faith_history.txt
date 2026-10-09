@@ -3,9 +3,9 @@
         main_rite = nestorian
 
         rites = {
-            bec_nestorian_nasrani = {}
-            bec_nestorian_mongol = {}
-            bec_nestorian_jingjiao = {}
+            zex_nasrani_rite = {}
+            zex_arkagun_rite = {}
+            zex_jingjiao_rite = {}
         }
 
         permitted = {
