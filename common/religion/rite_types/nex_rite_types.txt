@@ -25,8 +25,8 @@ nestorian = {
 	}
 }
 
-# Nestorian Expanded Rites
-# St. Thomas Christians
+# Nestorianism Expanded Rites
+# St. Thomas/Indian Christians
 zex_nasrani_rite = {
 	name = zex_nasrani_rite
 	desc = zex_nasrani_rite_desc
@@ -111,5 +111,27 @@ zex_jingjiao_rite = {
 		special_doctrine_ecumenical_christian
 		special_doctrine_immaterial_harmony
 		doctrine_family_rites
+	}
+}
+
+zex_socotran_rite = {
+	name = zex_socotran_rite
+	desc = zex_socotran_rite_desc
+	faith = nestorian
+
+	color = { 0.1 0.3 0.5 }
+
+	tenets = {
+		tenet_communal_possessions
+		tenet_astrology
+		tenet_pastoral_isolation
+	}
+
+	doctrines = {
+		doctrine_monasticism_accepted
+		doctrine_theocracy_lay_clergy
+		doctrine_pluralism_pluralistic
+		doctrine_anointment_permitted
+		special_doctrine_ecumenical_christian
 	}
 }
