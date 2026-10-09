@@ -1,0 +1,29 @@
+﻿
+on_game_start = {
+    on_actions = { nex_on_game_start }
+}
+
+nex_on_game_start = {
+    effect = {
+        # Malayali culture
+        title:c_alupa = { set_county_culture = culture:nex_malayali }
+        title:c_eranad = { set_county_culture = culture:nex_malayali }
+        title:c_kerala = { set_county_culture = culture:nex_malayali }
+        title:c_venadu = { set_county_culture = culture:nex_malayali }
+
+        # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
+        rite:nestorian = {
+            every_rite_county = {
+                limit = {
+                    culture ?= {
+                        OR = {
+                            has_cultural_pillar = heritage_mongolic
+                            has_cultural_pillar = heritage_turkic
+                        }
+                    }
+                }
+                set_county_rite = rite:zex_arkagun_rite
+            }
+        }
+    }
+}
