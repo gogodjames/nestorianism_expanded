@@ -5,6 +5,9 @@ on_game_start = {
 
 nex_on_game_start = {
     effect = {
+        # Patriarch Flavour
+        title:d_patriarchate_in_the_east = { set_coa = nex_patriarch_coa }
+
         # Malayali culture
         title:c_alupa = { set_county_culture = culture:nex_malayali }
         title:c_eranad = { set_county_culture = culture:nex_malayali }
@@ -14,16 +17,29 @@ nex_on_game_start = {
         # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
         rite:nestorian = {
             every_rite_county = {
-                limit = {
-                    culture ?= {
-                        OR = {
-                            has_cultural_pillar = heritage_mongolic
-                            has_cultural_pillar = heritage_turkic
+                # Steppe Christians
+                if = { 
+                    limit = {
+                        culture ?= {
+                            OR = {
+                                has_cultural_pillar = heritage_mongolic
+                                has_cultural_pillar = heritage_turkic
+                            }
                         }
                     }
+                    set_county_rite = rite:zex_arkagun_rite
                 }
-                set_county_rite = rite:zex_arkagun_rite
+                # Socotra
+                else_if = {
+                    limit = { title:c_socotra ?= this }
+                    set_county_rite = rite:zex_socotran_rite
+                }
+                else = {} # Stay Mainline
             }
         }
+
+        # Generate Holders for the ones that don't have historical ones at the time
+        give_interior_provinces_holders_effect = yes # Mesopotamia/Persia
+        give_exterior_provinces_holders_effect = yes # Elsewhere
     }
 }

@@ -1,0 +1,117 @@
+﻿# Required scope: rite. Parameters: TITLE (landed title), CULTURE (culture scope).
+# Holder comes from the current rite scope
+nex_create_clerical_holder_effect = {
+	if = {
+		limit = {
+			exists = faith.religious_head
+			exists = $TITLE$
+			exists = $CULTURE$
+			$TITLE$ = {
+				has_clerical_region = yes
+				NOT = { exists = holder }
+				exists = title_preferred_capital_county
+			}
+		}
+		save_scope_as = nex_clerical_holder_rite
+		faith = {
+			save_scope_as = nex_clerical_holder_faith
+			religious_head = { save_scope_as = nex_clerical_holder_employer }
+		}
+		create_character = {
+			template = simple_priest_character_template
+			gender = male
+			faith = scope:nex_clerical_holder_faith
+			rite = scope:nex_clerical_holder_rite
+			culture = $CULTURE$
+			employer = scope:nex_clerical_holder_employer
+			save_scope_as = nex_clerical_holder
+		}
+		create_title_and_vassal_change = {
+			type = appointment
+			save_scope_as = nex_clerical_holder_change
+			add_claim_on_loss = no
+		}
+		$TITLE$ = {
+			change_title_holder = {
+				holder = scope:nex_clerical_holder
+				change = scope:nex_clerical_holder_change
+				government_base = scope:nex_clerical_holder_employer
+			}
+		}
+		resolve_title_and_vassal_change = scope:nex_clerical_holder_change
+		scope:nex_clerical_holder = {
+			change_government = ecclesiastical_government
+			situation:the_christian_church ?= { add_manual_participant = prev }
+		}
+	}
+}
+ 
+give_interior_provinces_holders_effect = {
+	rite:nestorian = {
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_nisibis
+			CULTURE = title:d_nex_et_nisibis.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_adiabene
+			CULTURE = title:d_nex_et_adiabene.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_beth_garmai
+			CULTURE = title:d_nex_et_beth_garmai.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_maishan
+			CULTURE = title:d_nex_et_maishan.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_hulwan
+			CULTURE = title:d_nex_et_hulwan.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_beth_huzaye
+			CULTURE = title:d_nex_et_beth_huzaye.title_preferred_capital_county.culture
+		}
+	}
+}
+
+give_exterior_provinces_holders_effect = {
+	rite:nestorian = {
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_merv
+			CULTURE = title:d_nex_et_merv.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_herat
+			CULTURE = title:d_nex_et_herat.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_samarkand
+			CULTURE = title:d_nex_et_samarkand.title_preferred_capital_county.culture
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_fars
+			CULTURE = title:d_nex_et_fars.title_preferred_capital_county.culture
+		}
+	}
+
+	# Socotra
+	rite:zex_socotran_rite = {
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_socotra
+			CULTURE = title:d_nex_et_socotra.title_preferred_capital_county.culture
+		}
+	}
+
+	# Indian Provinces
+	rite:zex_nasrani_rite = {
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_india
+			CULTURE = culture:nex_malayali
+		}
+		nex_create_clerical_holder_effect = {
+			TITLE = title:d_nex_et_kalyan
+			CULTURE = culture:nex_malayali
+		}
+	}
+}

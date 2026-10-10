@@ -1,0 +1,53 @@
+﻿d_nex_et_india = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 30 105 105 }
+	colored_emblem = {
+		texture = "ce_nestorian_cross_lotus.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.85 } }
+	}
+}
+
+c_nex_et_nasrani_india = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 110 25 40 }
+	colored_emblem = {
+		texture = "ce_billet.dds"
+		color1 = "yellow"
+		instance = { position = { 0.34 0.66 } scale = { 0.43 0.57 } rotation = -7 }
+		instance = { position = { 0.66 0.66 } scale = { 0.43 0.57 } rotation = 7 }
+	}
+	colored_emblem = {
+		texture = "ce_billet.dds"
+		color1 = "white"
+		instance = { position = { 0.34 0.64 } scale = { 0.35 0.46 } rotation = -7 }
+		instance = { position = { 0.66 0.64 } scale = { 0.35 0.46 } rotation = 7 }
+	}
+	colored_emblem = {
+		texture = "ce_billet.dds"
+		color1 = "yellow"
+		instance = { position = { 0.5 0.65 } scale = { 0.04 0.51 } }
+	}
+	colored_emblem = {
+		texture = "ce_nestorian_cross.dds"
+		color1 = "yellow"
+		instance = { position = { 0.5 0.24 } scale = { 0.34 0.34 } }
+	}
+}
+
+d_nex_et_kalyan = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 30 70 135 }
+	colored_emblem = {
+		texture = "ce_anchor.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.64 } scale = { 0.68 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_nestorian_cross.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.22 } scale = { 0.32 0.32 } }
+	}
+}
