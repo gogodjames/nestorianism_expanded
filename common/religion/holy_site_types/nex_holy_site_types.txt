@@ -1,0 +1,18 @@
+# Burial site of St. Thomas
+uttaramerur = {
+	barony = b_uttaramerur
+	county = c_tiruvannamalai
+
+	# Strong bonus for the local ruler of the county if they follow the faith
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+    clergy_opinion = 5
+	}
+
+	# Scaled county modifier rewarding artifact collection (e.g., ancient crosses or Syriac manuscripts)
+	county_modifier_scaled = {
+		scale = holy_site_total_artifact_rarity
+		tax_mult = 0.01
+		development_growth = 0.05
+	}
+}
