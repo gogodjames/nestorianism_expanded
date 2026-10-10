@@ -11,13 +11,14 @@
 	eminent_holy_sites = {
 		jerusalem
 		baghdad
-		kerala
+		farz
 	}
 
 	holy_sites = {
 		kara_khorum
-		farz
+		kerala
 		antioch
+		chang_an
 	}
 
 	tenets = {
@@ -42,16 +43,5 @@
 		ReligiousHeadName = nestorian_religious_head_title
 		ReligiousHeadNameFemale = nestorian_religious_head_title_female
 		ReligiousHeadTitleName = nestorian_religious_head_title_name
-	}
-
-	# Christian names reserved across the Church of the East; rite types do not support these fields.
-	reserved_male_names = {
-		Markose Lukose Partikose Varghese Yakob Mathulla Yesoph Yohannan Ninan Chacko Issac Kurian Kuriakose Pathros Thomma Cheriyan
-		Pathappan Koshy Joshy Easow Vinci Thommen Yohan Kuruvila Geroge Geevarghese Pranju Inasu Pathros Pathappan Philipose Pothan Eapen
-		Oommen Chandy Monu Monukuttan Eappen Kuruvila Pathappan
-	}
-	reserved_female_names = {
-		Mariamma Eliamma Elia Mariam Maria Akkamma Thersia Theresa Achamma Susanna Susan Saramma Sheeba Rahel Rahelamma Akkamma Elikutty
-		Molu Molukutty Miryam Susamma Ancy Annamma Acca Kunju Kunjorotha Shoshannah
 	}
 }
