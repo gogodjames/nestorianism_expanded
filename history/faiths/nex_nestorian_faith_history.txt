@@ -22,6 +22,8 @@
             tenet_divine_liturgy
             tenet_literalism
             tenet_dulia
+            tenet_unreformed_syncretism # may reconsider this but I think there's argument to be amde that the goal of reforming the steppe was so pivotal that the use of their customs and rituals was a neccesarry evil
+            tenet_pastoral_isolation # seems pretty tame, don't know why the church would care. helps keep socotra less heretical than it already is
         }
 
         prohibited = {
