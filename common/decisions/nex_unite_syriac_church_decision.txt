@@ -1,0 +1,156 @@
+﻿nex_unite_syriac_churches_descision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	ai_check_interval = 12
+	decision_group_type = religious
+
+	cost = {
+		piety = 1000
+	}
+
+	is_shown = {
+		is_ruler = yes
+		NOT = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:nex_united_syriac_churches
+			}
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_united_miaphysite_churches
+			}
+		}
+		faith = faith:nestorian
+		exists = title:d_patriarchate_in_the_east.holder
+	}
+
+	is_valid = {
+		OR = {
+			is_independent_ruler = yes
+			has_title = title:d_patriarchate_in_the_east
+		}
+
+		title:c_antiocheia.title_province = {
+			OR = {
+				rite = root.rite
+				rite = rite:antiochian_rite
+			}
+		}
+
+		title:d_et_antioch.holder ?= { save_temporary_scope_as = patriarch_of_antioch }
+
+		calc_true_if = {
+			amount >= 3
+
+			# Control Antioch itself
+			custom_tooltip = {
+				text = nex_unite_syriac_churches_descision_controls_antioch_tt
+				OR = {
+					has_title = title:c_antiocheia
+					target_is_vassal_or_below = title:c_antiocheia.holder
+				}
+			}
+
+			# Control the Region
+			custom_tooltip = {
+				text = nex_unite_syriac_churches_descision_50_percent_tt
+				any_county_in_region = {
+					region = nex_custom_antioch_region
+					percent >= 0.50
+
+					holder.faith ?= faith:nestorian
+					OR = {
+						holder = root
+						holder = { is_vassal_or_below_of = root }
+					}
+				}
+			}
+			custom_tooltip = {
+				text = nex_unite_syriac_churches_descision_75_percent_tt
+				any_county_in_region = {
+					region = nex_custom_antioch_region
+					percent >= 0.75
+
+					holder.faith ?= faith:nestorian
+					OR = {
+						holder = root
+						holder = { is_vassal_or_below_of = root }
+					}
+				}
+			}
+
+			# You are the patriarch or they're nestorian or your friend/puppet
+			OR = {
+				has_title = title:d_et_antioch
+				trigger_if = {
+					limit = {
+						exists = scope:patriarch_of_antioch
+					}
+					custom_tooltip = {
+						text = nex_unite_syriac_churches_descision_patriarch_aligned_tt
+						scope:patriarch_of_antioch ?= {
+							OR = {
+								puppeteer ?= root
+								has_relation_friend = root
+								faith = faith:nestorian
+							}
+						}
+					}
+				}
+				trigger_else = {
+					custom_tooltip = {
+						text = nex_unite_syriac_churches_descision_patriarch_aligned_vacant_tt
+						always = no
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = nex_unite_syriac_churches_descision_antioch_holder_right_rite_tt
+			title:c_antiocheia.holder = {
+				OR = {
+					rite = root.rite
+					rite = rite:antiochian_rite
+				}
+			}
+		}
+		is_available_quick = {
+			adult = yes
+			imprisoned = no
+		}
+	}
+
+	ai_potential = {
+		OR = {
+			is_landed = yes
+			has_title = title:d_patriarchate_in_the_east
+		}
+	}
+
+	effect = {
+		nex_effect_mend_syriac_schism = yes
+
+		set_global_variable = {
+			name = nex_uniter_of_syriac_churches
+			value = this
+		}
+		
+		give_nickname = nex_nick_the_reconciler
+		add_character_modifier = nex_mended_syriac_schism_modifier
+		change_spiritual_fulfillment = major_spiritual_fulfillment_value
+
+		hidden_effect = {
+			every_living_character = {
+				limit = {
+					is_ruler = yes
+					faith.religion ?= religion:christianity_religion
+				}
+				trigger_event = nex_syriac_events.0001
+			}
+		}
+	}
+}

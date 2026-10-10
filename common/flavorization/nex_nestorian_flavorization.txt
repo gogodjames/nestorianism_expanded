@@ -88,3 +88,51 @@ nex_nestorian_bishop_female = {
 		spouse_takes_title = no
 	}
 }
+
+# Named patriarchal flavor when their holders follow the Church of the East.
+nex_nestorian_patriarchate = {
+	type = title
+	tier = duchy
+	priority = 130
+	titles = { d_et_roma d_et_constantinople d_et_alexandria d_et_antioch d_et_jerusalem d_et_aquileia d_et_armenia d_et_kartli }
+	governments = { ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		target_character = yes
+		top_liege = no
+		only_holder = yes
+	}
+	special_title = clerical_region
+}
+
+nex_nestorian_patriarch_male = {
+	type = character
+	gender = male
+	special = clerical_region_holder
+	tier = duchy
+	priority = 300
+	titles = { d_et_roma d_et_constantinople d_et_alexandria d_et_antioch d_et_jerusalem d_et_aquileia d_et_armenia d_et_kartli }
+	governments = { theocracy_government ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+		spouse_takes_title = no
+	}
+}
+
+nex_nestorian_patriarch_female = {
+	type = character
+	gender = female
+	special = clerical_region_holder
+	tier = duchy
+	priority = 300
+	titles = { d_et_roma d_et_constantinople d_et_alexandria d_et_antioch d_et_jerusalem d_et_aquileia d_et_armenia d_et_kartli }
+	governments = { theocracy_government ecclesiastical_government }
+	faiths = { nestorian }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+		spouse_takes_title = no
+	}
+}

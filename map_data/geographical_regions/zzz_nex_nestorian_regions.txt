@@ -1,4 +1,11 @@
-﻿## CLERICAL REGIONS
+﻿## CUSTOM REGIONS
+nex_custom_antioch_region = {
+	regions = {
+		et_1178_antioch_region
+	}
+}
+
+## CLERICAL REGIONS
 
 # Replacement
 et_867_seleucia_ctesiphon_region = {

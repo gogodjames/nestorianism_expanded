@@ -120,6 +120,7 @@ zex_socotran_rite = {
 	faith = nestorian
 
 	color = { 0.1 0.3 0.5 }
+	icon = christianity_rounded_cross_04 # Looks kinda like the one in the Eriosh Petroglyphs, and green fits the region
 
 	tenets = {
 		tenet_communal_possessions

@@ -1,0 +1,7 @@
+﻿nex_mended_syriac_schism_modifier = {
+    icon = drink_positive
+
+    same_faith_opinion = 5
+    character_spiritual_fulfillment_gain_mult = 0.1
+    monthly_piety_gain_mult = 0.05
+}

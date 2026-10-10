@@ -41,5 +41,10 @@ nex_on_game_start = {
         # Generate Holders for the ones that don't have historical ones at the time
         give_interior_provinces_holders_effect = yes # Mesopotamia/Persia
         give_exterior_provinces_holders_effect = yes # Elsewhere
+
+        # Refresh Head of Rites
+        faith:nestorian = {
+            every_faith_rite = { force_refresh_head_of_rite = yes }
+        }
     }
 }
