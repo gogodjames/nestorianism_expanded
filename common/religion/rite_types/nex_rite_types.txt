@@ -60,7 +60,7 @@ zex_arkagun_rite = {
 	faith = nestorian
 
 	color = { 0.1 0.4 0.3 }
-	icon = christianity_saint_john_cross_03
+	icon = nex_arkagun_cross
 
 	tenets = {
 		tenet_unreformed_syncretism
