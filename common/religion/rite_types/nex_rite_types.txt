@@ -123,13 +123,12 @@ zex_socotran_rite = {
 
 	tenets = {
 		tenet_communal_possessions
-		tenet_astrology
+		tenet_unreformed_syncretism
 		tenet_pastoral_isolation
 	}
 
 	doctrines = {
 		doctrine_monasticism_accepted
-		doctrine_theocracy_lay_clergy
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
