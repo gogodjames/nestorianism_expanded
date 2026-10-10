@@ -156,6 +156,7 @@ d_nex_et_socotra = {
 	867.1.1 = {
 		government = ecclesiastical_government
 		clerical_region = nex_et_socotra_region
+		holder = nex_socotra_Yakob_867
 	}
 }
 

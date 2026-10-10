@@ -41,6 +41,9 @@
     rite = "zex_socotran_rite"
     culture = "yemeni"
     father = 145618
+    trait = peasant_leader
+    trait = zealous
+    trait = education_martial_2
     845.1.1 = {
         birth = "845.1.1"
     }
@@ -53,6 +56,12 @@
     rite = "zex_socotran_rite"
     culture = "yemeni"
     father = 145967
+    trait = peasant_leader
+    trait = holy_warrior
+    trait = education_martial_3
+    trait = brave
+    trait = zealous
+    trait = lifestyle_mystic
     825.1.1 = {
         birth = "825.1.1"
     }
