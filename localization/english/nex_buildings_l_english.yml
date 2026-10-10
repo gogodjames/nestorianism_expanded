@@ -1,0 +1,12 @@
+﻿l_english:
+  # Base building 
+  building_type_nex_saint_thomas_mount_01: "Saint Thomas Mount"
+  building_type_nex_saint_thomas_mount_01_desc: "The site of [GetScriptedCharacterByHistoryID('166236').GetUIName]'s martyrdom. Struck by spears in 72 AD, the site of his death has become a place of worship for [GetFaithByKey('nestorian').GetAdjective] pilgrims and local [GetRiteByKey('zex_nasrani_rite').GetAdherentNamePlural]."
+
+  # Level 1 
+  building_nex_saint_thomas_mount_01: "Saint Thomas Mount"
+  building_nex_saint_thomas_mount_01_desc: "A humble shrine built upon the sacred mount by local [GetRiteByKey('zex_nasrani_rite').GetAdherentNamePlural] venerating the martyrdom of their namesake and founder. From up here, the beauty of God's creation stands in contrast to the tragedy of [GetScriptedCharacterByHistoryID('166236').GetUINamePossessive] death."
+
+  # Level 2 
+  building_nex_saint_thomas_mount_02: "Our Lady of the Mount"
+  building_nex_saint_thomas_mount_02_desc: "Due to the influx of [GetFaithByKey('nestorian').GetAdjective] pilgrims, Our Lady of the Mount Church has been established to serve the faithful. Beyond the metaphorical sense, the church has also become a literal lighthouse; helping those who were once lost be found in the light of God."
