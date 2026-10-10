@@ -1,0 +1,97 @@
+﻿# Parameters: 
+# BARONY (title scope)
+# ORDER_TYPE
+# ORDER_TITLE (title scope)
+# CULTURE (culture scope).
+nex_create_historical_monastery_effect = {
+    if = {
+        limit = {
+            has_pam_dlc_trigger = yes
+            $ORDER_TITLE$ = { is_title_created = no }
+            $BARONY$ = {
+                exists = county.holder
+                NOT = { exists = lessee }
+                title_province = {
+                    has_ongoing_construction = no
+                    OR = {
+                        has_holding = yes
+                        barony_cannot_construct_holding = no
+                    }
+                }
+            }
+        }
+        # Create a church holding if it's empty
+        $BARONY$ = {
+            save_scope_as = nex_monastery_barony
+            county.holder = { save_scope_as = nex_monastery_founder }
+            title_province = {
+                if = {
+                    limit = { has_holding = no }
+                    set_holding_type = church_holding
+                }
+            }
+        }
+        if = {
+            limit = {
+                scope:nex_monastery_barony.title_province = { has_holding = yes }
+            }
+            scope:nex_monastery_founder = { get_title = scope:nex_monastery_barony }
+            create_character = {
+                template = simple_priest_character_template
+                gender = male
+                faith = faith:nestorian
+                rite = rite:nestorian
+                culture = $CULTURE$
+                trait = devoted
+                employer = scope:nex_monastery_founder
+                save_scope_as = nex_monastery_abbot
+            }
+            scope:nex_monastery_founder = {
+                set_variable = {
+                    name = nex_historical_monastery_founder
+                    days = 1
+                }
+            }
+            create_holy_order = {
+                leader = scope:nex_monastery_abbot
+                founder = scope:nex_monastery_founder
+                capital = scope:nex_monastery_barony
+                holy_order_type = $ORDER_TYPE$
+                save_scope_as = nex_monastery_order
+            }
+            scope:nex_monastery_founder = { remove_variable = nex_historical_monastery_founder }
+        }
+    }
+}
+
+nex_initialize_historical_monasteries_effect = {
+    # Abraham of Kashkar's Great Monastery in Mount Izla
+    # Dara is a nearby empty non-capital barony so I chose that, there's not a super close option otherwise
+    nex_create_historical_monastery_effect = {
+        BARONY = title:b_dara
+        ORDER_TYPE = ho_nex_mount_izla
+        ORDER_TITLE = title:d_nex_mount_izla
+        CULTURE = culture:assyrian
+    }
+
+    # Bulayiq lies north of Turfan. Empty Yidu represents the monastery without
+    # displacing the existing city at Turpan or editing the map.
+    # may not have existed on the later dates, but that's fine for gameplay
+    if = {
+        limit = { game_start_date < 1066.1.1 }
+        nex_create_historical_monastery_effect = {
+            BARONY = title:b_yidu
+            ORDER_TYPE = ho_nex_bulayiq
+            ORDER_TITLE = title:d_nex_bulayiq
+            CULTURE = culture:sogdian
+        }
+    }
+    else = {
+        nex_create_historical_monastery_effect = {
+            BARONY = title:b_yidu
+            ORDER_TYPE = ho_nex_bulayiq
+            ORDER_TITLE = title:d_nex_bulayiq
+            CULTURE = culture:uyghur
+        }
+    }
+}

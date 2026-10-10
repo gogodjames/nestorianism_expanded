@@ -1,0 +1,57 @@
+﻿ho_nex_mount_izla = {
+    type = monastic
+    government = monastic_holy_order_government
+    title = d_nex_mount_izla
+    name = holy_order_nex_mount_izla
+    coat_of_arms = d_nex_mount_izla
+    tenet = tenet_asceticism
+
+    trigger = {
+        has_pam_dlc_trigger = yes
+        scope:province.county ?= title:c_nasibin
+        scope:leader = { faith = faith:nestorian }
+        trigger_if = {
+            limit = {
+                scope:founder = { has_variable = nex_historical_monastery_founder }
+            }
+            always = yes
+        }
+        trigger_else = {
+            scope:founder = {
+                faith = faith:nestorian
+                NOT = { has_variable = monastic_game_start_founder }
+            }
+        }
+    }
+
+    weight = { value = 5 }
+}
+
+ho_nex_bulayiq = {
+    type = monastic
+    government = monastic_holy_order_government
+    title = d_nex_bulayiq
+    name = holy_order_nex_bulayiq
+    coat_of_arms = d_nex_bulayiq
+    tenet = tenet_scholasticism
+
+    trigger = {
+        has_pam_dlc_trigger = yes
+        scope:province.county ?= title:c_kara_khoja
+        scope:leader = { faith = faith:nestorian }
+        trigger_if = {
+            limit = {
+                scope:founder = { has_variable = nex_historical_monastery_founder }
+            }
+            always = yes
+        }
+        trigger_else = {
+            scope:founder = {
+                faith = faith:nestorian
+                NOT = { has_variable = monastic_game_start_founder }
+            }
+        }
+    }
+
+    weight = { value = 5 }
+}

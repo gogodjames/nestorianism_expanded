@@ -1,0 +1,19 @@
+﻿d_nex_mount_izla = {
+    pattern = "pattern_solid.dds"
+    color1 = rgb { 35 55 100 }
+    colored_emblem = {
+        texture = "ce_nestorian_cross.dds"
+        color1 = "yellow"
+        instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+    }
+}
+
+d_nex_bulayiq = {
+    pattern = "pattern_solid.dds"
+    color1 = rgb { 120 45 55 }
+    colored_emblem = {
+        texture = "ce_nestorian_cross.dds"
+        color1 = "yellow"
+        instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+    }
+}

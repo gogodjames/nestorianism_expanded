@@ -46,5 +46,8 @@ nex_on_game_start = {
         faith:nestorian = {
             every_faith_rite = { force_refresh_head_of_rite = yes }
         }
+        
+        # Historical Church of the East monasteries.
+        nex_initialize_historical_monasteries_effect = yes
     }
 }

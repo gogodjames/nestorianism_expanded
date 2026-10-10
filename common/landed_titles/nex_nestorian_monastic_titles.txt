@@ -1,0 +1,15 @@
+﻿d_nex_mount_izla = {
+    color = { 35 55 100 }
+    capital = c_nasibin
+    definite_form = yes
+    landless = yes
+    no_automatic_claims = yes
+}
+
+d_nex_bulayiq = {
+    color = { 120 45 55 }
+    capital = c_kara_khoja
+    definite_form = yes
+    landless = yes
+    no_automatic_claims = yes
+}
