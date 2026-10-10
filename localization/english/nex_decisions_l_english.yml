@@ -1,0 +1,20 @@
+﻿l_english:
+ nex_fervor_gain_mended_syriac_schism: "Union of the Syriac Churches"
+
+ nex_unite_syriac_churches_descision: "Unite the Syriac Churches"
+ nex_unite_syriac_churches_descision_desc: "[GetTitleByKey('b_antiocheia').GetNameNoTier], the ancient seat of the Apostles, has long stood apart from the [GetFaithByKey('nestorian').GetName]. Though divided in confession, our churches preserve a shared Syriac love of worship and learning. Now I have the influence to reconcile them. By securing Antioch’s acceptance of our dyophysitism and renouncement of miaphysitism without forsaking its West Syriac tradition, I can bring them back into communion with the Church of the East."
+ nex_unite_syriac_churches_descision_tooltip: "Reconcile the Syriac churches through a common confession, preserving Antioch’s west syriac rites."
+ nex_unite_syriac_churches_descision_confirm: "Unify the Syriac Rites!"
+ nex_unite_syriac_churches_descision_50_percent_tt: "At least #V 50%#!of the [GetGeographicalRegion('nex_custom_antioch_region').GetName] [region|E] is controlled by [GetFaithByKey('nestorian').GetAdjective] [rulers|E] in your [realm|E]"
+ nex_unite_syriac_churches_descision_75_percent_tt: "At least #V 75%#! of the [GetGeographicalRegion('nex_custom_antioch_region').GetName] [region|E] is controlled by [GetFaithByKey('nestorian').GetAdjective] [rulers|E] in your [realm|E]"
+ nex_unite_syriac_churches_descision_controls_antioch_tt: "[GetTitleByKey('c_antiocheia').GetName] is held by you or a [vassal|E]"
+ nex_unite_syriac_churches_descision_patriarch_aligned_tt: "[patriarch_of_antioch.GetShortUIName] would agree. #weak (Follows the [GetFaithByKey('nestorian').GetAdjective] [faith|E], or is your [puppet|E] or [friend|E])#!"
+ nex_unite_syriac_churches_descision_patriarch_aligned_vacant_tt: "There is a Patriarch of [GetTitleByKey('d_et_antioch').GetNameNoTier] who would agree. #weak (Follows the [GetFaithByKey('nestorian').GetAdjective] [faith|E], or is your [puppet|E] or [friend|E])#!"
+ nex_effect_mend_syriac_schism_tt: "[THIS.Rite.GetName] will join the [GetFaithByKey('nestorian').GetName] [faith|E]"
+ nex_mend_syriac_schism_convert_patriarch_tt: "The current Patriarch of Antioch will adopt the [GetRiteByKey('antiochian_rite').GetAdjective] [rite|E] and join the [GetFaithByKey('nestorian').GetName] [faith|E]"
+ nex_mend_syriac_schism_christian_counties_tt: "Each Christian [county|E] in the [GetGeographicalRegion('nex_custom_antioch_region').GetName] [region|E] has a #V 66%#! chance to adopt the [GetRiteByKey('antiochian_rite').GetAdjective] [rite|E]"
+ nex_mend_syriac_schism_non_christian_counties_tt: "After these conversions, each non-Christian [county|E] in the [GetGeographicalRegion('nex_custom_antioch_region').GetName] [region|E] held by a [GetFaithByKey('nestorian').GetAdjective] [ruler|E] and bordering a [GetFaithByKey('nestorian').GetAdjective] or [GetRiteByKey('antiochian_rite').GetAdjective] county has a #V 33%#! chance to adopt the [GetRiteByKey('antiochian_rite').GetAdjective] [rite|E]"
+ nex_effect_mend_syriac_schism_past_tt: "[GetRiteByKey('antiochian_rite').GetName] became part of the [GetFaithByKey('nestorian').GetName] [faith|E]"
+ 
+ nex_nick_the_reconciler: "the Reconciler"
+ nex_nick_the_reconciler_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] restored communion between the Church of the East and the Patriarch of Antioch, bringing the West Syriac Rites into the fold of the East Syriac"

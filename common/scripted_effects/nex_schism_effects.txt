@@ -1,0 +1,137 @@
+﻿
+# Bring the west syriac (antiochene) rite into the 'nestorian' faith
+# @scope character (the one mending the schism)
+nex_effect_mend_syriac_schism = {
+    
+    hidden_effect = {
+        # Make the decision Unavailable
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:nex_united_syriac_churches
+        }
+    
+        # Save the Patriarch
+        title:d_et_antioch = {
+            if = {
+                limit = {
+                    has_clerical_region = yes
+                    exists = holder
+                }
+                holder = { save_scope_as = patriarch_of_antioch }
+            }
+        }
+    }
+
+    rite:antiochian_rite ?= {
+        # Replace miaphysitism with tenet_asceticism or a random nestorian tenet 
+        if = {
+            limit = {
+                rite_has_tenet = tenet_miaphysitism
+            }
+            remove_rite_tenet = tenet_miaphysitism
+
+            if = {
+                limit = {
+                    NOT = { rite_has_tenet = tenet_asceticism } 
+                }
+                tenet:tenet_asceticism = { save_scope_as = replacement_tenet }
+            }
+            else = {
+                rite:nestorian = {
+                    random_rite_tenet = {
+                        limit = { 
+                            NOT = { 
+                                rite:antiochian_rite = { rite_has_tenet = prev }
+                            }
+                        }
+                        save_scope_as = replacement_tenet
+                    }
+                }
+            }
+
+            scope:replacement_tenet ?= {
+                rite:antiochian_rite = {
+                    add_rite_tenet = prev
+                }
+            }
+            
+            hidden_effect = { add_rite_doctrine = special_doctrine_pope_blessing }
+        }
+
+        # Join the rite to the faith
+        custom_tooltip = {
+            text = nex_effect_mend_syriac_schism_tt
+            set_parent_faith = {
+                target = faith:nestorian
+                main = no
+                include_derived = no
+            }
+            set_rite_name = {
+                name = antiochian_rite
+                desc = nex_antiochian_west_syriac_description
+                adjective = antiochian_rite_adj
+                adherent = antiochian_rite_adherent
+                adherent_plural = antiochian_rite_adherent_plural
+            }
+        }
+    }
+
+    # Convert the incumbent Patriarch to the reunited rite
+    if = {
+        limit = { exists = scope:patriarch_of_antioch }
+        custom_tooltip = {
+            text = nex_mend_syriac_schism_convert_patriarch_tt
+            scope:patriarch_of_antioch = {
+                set_character_rite = rite:antiochian_rite
+            }
+        }
+    }
+
+    # Convert with 66% Chance christian counties
+    custom_tooltip = {
+        text = nex_mend_syriac_schism_christian_counties_tt
+        every_county_in_region = {
+            region = nex_custom_antioch_region
+            limit = { religion = religion:christianity_religion }
+            random = {
+                chance = 66
+                set_county_rite = rite:antiochian_rite
+            }
+        }
+    }
+
+    # Convert with 33% Chance of Nestorian Neighbouring non-christian counties that have Nestorian holders 
+    custom_tooltip = {
+        text = nex_mend_syriac_schism_non_christian_counties_tt
+        # Calculate the counties before so it doesn't cascade as it goes on
+        every_county_in_region = {
+            region = nex_custom_antioch_region
+            limit = {
+                NOT = { religion = religion:christianity_religion }
+                exists = holder
+                holder = { faith = faith:nestorian }
+                any_neighboring_county = {
+                    OR = {
+                        faith = faith:nestorian
+                        rite = rite:antiochian_rite
+                    }
+                }
+            }
+            add_to_list = syriac_non_christian_counties
+        }
+        every_in_list = {
+            list = syriac_non_christian_counties
+            random = {
+                chance = 33
+                set_county_rite = rite:antiochian_rite
+            }
+        }
+    }
+
+    faith:nestorian = {
+        change_fervor = {
+            value = medium_fervor_gain
+            desc = nex_fervor_gain_mended_syriac_schism
+        }
+    }
+}

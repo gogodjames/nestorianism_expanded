@@ -1,0 +1,56 @@
+﻿namespace = nex_syriac_events
+
+# Inform Christian rulers after nex_unite_syriac_churches_descision
+nex_syriac_events.0001 = {
+	type = character_event
+	title = nex_syriac_events.0001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { this = global_var:nex_uniter_of_syriac_churches }
+				desc = nex_syriac_events.0001.desc.reconciler
+			}
+			desc = nex_syriac_events.0001.desc.rulers
+		}
+	}
+	theme = faith
+	left_portrait = {
+		character = global_var:nex_uniter_of_syriac_churches
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:patriarch_of_antioch # Saved in the Scripted Effect
+		animation = prayer
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		custom_tooltip = nex_effect_mend_syriac_schism_past_tt
+	}
+
+	option = {
+		name = nex_syriac_events.0001.a
+		trigger = { 
+			this.faith = faith:nestorian
+		}
+	}
+	
+	option = {   
+		name = nex_syriac_events.0001.b
+		trigger = { 
+			this.faith != faith:nestorian
+			this.faith != faith:miaphysitism
+			this.faith != faith:armenian_apostolic
+		}
+	}
+
+	option = {
+		name = nex_syriac_events.0001.c
+		trigger = { 
+			OR = {
+				this.faith = faith:miaphysitism
+				this.faith = faith:armenian_apostolic
+			}
+		}
+	}
+}
