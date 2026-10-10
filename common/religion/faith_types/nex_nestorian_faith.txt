@@ -19,6 +19,7 @@
 		kerala
 		antioch
 		chang_an
+		uttaramerur
 	}
 
 	tenets = {
