@@ -37,6 +37,7 @@
 				rite = rite:antiochian_rite
 			}
 		}
+
 		title:d_et_antioch.holder ?= { save_temporary_scope_as = patriarch_of_antioch }
 
 		calc_true_if = {
@@ -108,6 +109,15 @@
 	}
 
 	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = nex_unite_syriac_churches_descision_antioch_holder_right_rite_tt
+			title:c_antiocheia.holder = {
+				OR = {
+					rite = root.rite
+					rite = rite:antiochian_rite
+				}
+			}
+		}
 		is_available_quick = {
 			adult = yes
 			imprisoned = no

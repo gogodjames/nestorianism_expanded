@@ -76,14 +76,11 @@ nex_effect_mend_syriac_schism = {
         }
     }
 
-    # Convert the incumbent Patriarch to the reunited rite
-    if = {
-        limit = { exists = scope:patriarch_of_antioch }
-        custom_tooltip = {
-            text = nex_mend_syriac_schism_convert_patriarch_tt
-            scope:patriarch_of_antioch = {
-                set_character_rite = rite:antiochian_rite
-            }
+    # I tried to make it keep the previous one but convert them but ck3 was being a pain in the ass
+    rite:antiochian_rite = {
+        nex_create_clerical_holder_effect = {
+            TITLE = title:d_et_antioch
+            CULTURE = culture:assyrian
         }
     }
 

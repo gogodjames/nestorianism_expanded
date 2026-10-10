@@ -19,7 +19,7 @@ nex_syriac_events.0001 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:patriarch_of_antioch # Saved in the Scripted Effect
+		character = scope:nex_clerical_holder # Saved in the Scripted Effect
 		animation = prayer
 	}
 
