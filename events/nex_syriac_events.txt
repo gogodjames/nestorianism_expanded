@@ -4,15 +4,7 @@
 nex_syriac_events.0001 = {
 	type = character_event
 	title = nex_syriac_events.0001.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { this = global_var:nex_uniter_of_syriac_churches }
-				desc = nex_syriac_events.0001.desc.reconciler
-			}
-			desc = nex_syriac_events.0001.desc.rulers
-		}
-	}
+	desc = nex_syriac_events.0001.desc
 	theme = faith
 	left_portrait = {
 		character = global_var:nex_uniter_of_syriac_churches
