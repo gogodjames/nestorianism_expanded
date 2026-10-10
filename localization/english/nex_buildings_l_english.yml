@@ -1,7 +1,7 @@
 ﻿l_english:
   # Base building 
   building_type_nex_saint_thomas_mount_01: "Saint Thomas Mount"
-  building_type_nex_saint_thomas_mount_01_desc: "The site of St. Thomas the Apostle's martyrdom. Struck by spears in 72 AD the site of his death has become a place of worship for Nestorian pilgrims and local Nasranis."
+  building_type_nex_saint_thomas_mount_01_desc: "The site of St. Thomas the Apostle's martyrdom. Struck by spears in 72 AD, the site of his death has become a place of worship for Nestorian pilgrims and local Nasranis."
 
   # Level 1 
   building_nex_saint_thomas_mount_01: "Saint Thomas Mount"
@@ -9,4 +9,4 @@
 
   # Level 2 
   building_nex_saint_thomas_mount_02: "Our Lady of the Mount"
-  building_nex_saint_thomas_mount_02_desc: "Due to the influx of Nestorian pilgrims, the Our Lady of the Mount Church has been established to serve the faithful. Beyond the metaphorical sense, the church has also become a literal lighthouse; helping those who were once lost be found in the light of God."
+  building_nex_saint_thomas_mount_02_desc: "Due to the influx of Nestorian pilgrims, Our Lady of the Mount Church has been established to serve the faithful. Beyond the metaphorical sense, the church has also become a literal lighthouse; helping those who were once lost be found in the light of God."
