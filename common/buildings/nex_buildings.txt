@@ -1,8 +1,8 @@
-##########
+﻿##########
 # Saint Thomas Mount
 ##########
 
-saint_thomas_mount_01 = {
+nex_saint_thomas_mount_01 = {
 	effect_desc = {
 		triggered_desc = {
 			trigger = { has_dlc_feature = legends_of_the_dead }
@@ -41,7 +41,7 @@ saint_thomas_mount_01 = {
 		monthly_income = 1
 	}
 
-	next_building = saint_thomas_mount_02
+	next_building = nex_saint_thomas_mount_02
 	
 	ai_value = {
 		base = 100
@@ -58,7 +58,7 @@ saint_thomas_mount_01 = {
 	flag = holy_building
 }
 
-saint_thomas_mount_02 = {
+nex_saint_thomas_mount_02 = {
 	effect_desc = {
 		triggered_desc = {
 			trigger = { has_dlc_feature = legends_of_the_dead }
