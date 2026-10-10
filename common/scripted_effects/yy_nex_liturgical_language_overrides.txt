@@ -1,0 +1,57 @@
+﻿# Override vanilla clergy schooling with Aramaic for the West Syriac rite and Church of the East.
+# File is yy_ so I can override it with my other mod which would also include this fix
+christian_clergy_learn_liturgical_language_effect = {
+	if = {
+		limit = {
+			NOT = { has_character_flag = nex_aramaic_schooling_rolled }
+			is_clergy = yes
+			OR = {
+				rite = rite:antiochian_rite
+				faith = faith:nestorian
+			}
+		}
+		add_character_flag = nex_aramaic_schooling_rolled
+		if = {
+			limit = { NOT = { knows_language = language_aramaic } }
+			random = {
+				chance = pam_clergy_liturgical_language_chance
+				learn_language = language_aramaic
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_character_flag = pam_latin_schooling_rolled }
+			is_clergy = yes
+			portrait_religious_western_christian_trigger = yes
+
+			faith != faith:nestorian
+			rite != rite:antiochian_rite
+		}
+		add_character_flag = pam_latin_schooling_rolled
+		if = {
+			limit = { NOT = { knows_language = language_latin } }
+			random = {
+				chance = pam_clergy_liturgical_language_chance
+				learn_language = language_latin
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_character_flag = pam_greek_schooling_rolled }
+			is_clergy = yes
+			portrait_religious_orthodox_trigger = yes
+			
+			faith != faith:nestorian
+		}
+		add_character_flag = pam_greek_schooling_rolled
+		if = {
+			limit = { NOT = { knows_language = language_greek } }
+			random = {
+				chance = pam_clergy_liturgical_language_chance
+				learn_language = language_greek
+			}
+		}
+	}
+}
