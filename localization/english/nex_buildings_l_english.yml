@@ -1,7 +1,7 @@
 ﻿l_english:
   # Base building 
   building_type_nex_saint_thomas_mount_01: "Saint Thomas Mount"
-  building_type_nex_saint_thomas_mount_01_desc: "The site of [GetScriptedCharacterByHistoryID('166236').GetUIName]'s martyrdom. Struck by spears in 72 AD, the site of his death has become a place of worship for [GetFaithByKey('nestorian').GetAdjective] pilgrims and local [GetRiteByKey('zex_nasrani_rite').GetAdherentNamePlural]."
+  building_type_nex_saint_thomas_mount_01_desc: "The site of St Thomas' martyrdom. Struck by spears in 72 AD, the site of his death has become a place of worship for [GetFaithByKey('nestorian').GetAdjective] pilgrims and local [GetRiteByKey('zex_nasrani_rite').GetAdherentNamePlural]."
 
   # Level 1 
   building_nex_saint_thomas_mount_01: "Saint Thomas Mount"
