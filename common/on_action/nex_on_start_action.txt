@@ -19,9 +19,10 @@ nex_on_game_start = {
         title:b_kanchipuram.title_province = {
             if = {
                 limit = {
-                    has_special_building = no
+                    has_special_building = yes
                     NOT = { has_building_or_higher = nex_saint_thomas_mount_01 }
                 }
+                remove_building = generic_university
                 add_special_building = nex_saint_thomas_mount_01
             }
         }
