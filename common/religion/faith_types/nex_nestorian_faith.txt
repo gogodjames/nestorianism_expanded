@@ -19,7 +19,7 @@
 		kerala
 		antioch
 		chang_an
-		uttaramerur
+		nex_saint_thomas_mount
 	}
 
 	tenets = {

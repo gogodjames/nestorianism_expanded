@@ -1,11 +1,11 @@
-# Burial site of St. Thomas
-kanchipuram = {
+﻿# Burial site of St. Thomas
+nex_saint_thomas_mount = {
 	barony = b_kanchipuram
 	county = c_kanchipuram
 
 	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.05
-    clergy_opinion = 5
+		clergy_opinion = 5
 	}
 
 	county_modifier_scaled = {

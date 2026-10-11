@@ -27,14 +27,14 @@ nex_on_game_start = {
             }
         }
 
-        # Enshrine Thomas's relic at kanchipuram, even under a non-Christian local ruler.
+        # Enshrine Thomas's relic at St. Thomas Mount
         if = {
             limit = {
-                exists = holy_site:kanchipuram
+                exists = holy_site:nex_saint_thomas_mount
                 exists = faith:nestorian.religious_head
-                holy_site:kanchipuram = { holy_site_artifact_count < 3 }
+                holy_site:nex_saint_thomas_mount = { holy_site_artifact_count < 3 }
             }
-            holy_site:kanchipuram = { save_scope_as = relic_site }
+            holy_site:nex_saint_thomas_mount = { save_scope_as = relic_site }
             faith:nestorian = {
                 save_scope_as = relic_faith
                 religious_head = { save_scope_as = relic_owner }
