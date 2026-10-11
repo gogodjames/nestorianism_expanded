@@ -4,6 +4,7 @@ on_game_start = {
 }
 
 nex_on_game_start = {
+    
     effect = {
         # Patriarch Flavour
         title:d_patriarchate_in_the_east = { set_coa = nex_patriarch_coa }
@@ -60,5 +61,12 @@ nex_on_game_start = {
         
         # Historical Church of the East monasteries.
         nex_initialize_historical_monasteries_effect = yes
+
+        # set scopes required by create_starting_relic_kerala_christian_effect and then runs it to override the event chain that usually populates holy relics at game star
+        # since kerala is no longer an eminent holy site it gets skipped, unless done manually
+		holy_site:kerala = { save_scope_as = relic_site }
+		faith:nestorian = { save_scope_as = relic_faith } # Or whichever faith Kerala belongs to in your mod
+		holy_site:kerala.county.holder = { save_scope_as = relic_owner }
+		create_starting_relic_kerala_christian_effect = yes
     }
 }
