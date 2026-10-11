@@ -1,0 +1,106 @@
+﻿# Targeted override of vanilla pam_canonize_saint_effect (CK3 1.20.0.4).
+# History runs the first add_saint before game-start effects; later registrations
+# cannot change the engine-owned burial location. Redirect Thomas at that first
+# canonization, retaining vanilla's character history and shared-faith additions.
+# On game updates, compare the private helper below with pam_saint_effects.txt.
+# Other mods overriding the public effect must incorporate this redirect.
+pam_canonize_saint_effect = {
+    if = {
+        limit = { $CANDIDATE$ = { this = character:166236 } }
+        nex_canonize_saint_at_province_effect = {
+            CANONIZER = $CANONIZER$
+            CANDIDATE = $CANDIDATE$
+            CONSECRATION_PROVINCE = title:b_kanchipuram.title_province
+            PRESET = $PRESET$
+        }
+    }
+    else = {
+        nex_canonize_saint_at_province_effect = {
+            CANONIZER = $CANONIZER$
+            CANDIDATE = $CANDIDATE$
+            CONSECRATION_PROVINCE = $CONSECRATION_PROVINCE$
+            PRESET = $PRESET$
+        }
+    }
+}
+
+# Vanilla canonization body, unchanged except for the private effect's name.
+nex_canonize_saint_at_province_effect = {
+	$CANDIDATE$ = {
+		add_trait = saint
+	}
+	# Register on the canonizer's faith for the Saints-list UI and faith-split; add_saint needs the saint trait (added above) and a burial province with a holding.
+	$CANONIZER$.faith ?= {
+		hidden_effect = {
+			add_saint = {
+				character = $CANDIDATE$
+				burial_province = $CONSECRATION_PROVINCE$
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			$CANDIDATE$ = {
+				is_alive = no
+				has_dead_character_variable = no_corpse_left
+			}
+		}
+		$CONSECRATION_PROVINCE$ = {
+			set_variable = no_corpse_left
+		}
+	}
+
+	# The engine's saint registry (add_saint, above) owns the saint->province link (saint_burial_location) and the relic charges (remaining_saint_relics). All we keep is the buried-saint travel PoI, plus a thin province list the PoI builder iterates.
+	$CONSECRATION_PROVINCE$ = {
+		# Only readable through the tomb PoI, so skip provinces that will never get one
+		if = {
+			limit = {
+				$PRESET$ = yes
+				NOT = { has_variable = hide_location_for_saint }
+			}
+			set_variable = pam_preset_buried_saint
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_variable = hide_location_for_saint
+					has_travel_point_of_interest = poi_buried_saint
+				}
+			}
+			add_to_global_variable_list = {
+				name = pam_buried_saint_poi_list
+				target = $CONSECRATION_PROVINCE$
+			}
+			add_travel_point_of_interest = poi_buried_saint
+		}
+	}
+
+	if = {
+		limit = {
+			$CANONIZER$ = { is_alive = yes }
+			$CANONIZER$.rite ?= { rite_has_parameter = tenet_dulia_canonization_faith_bonus }
+		}
+		pam_grant_dulia_canonization_faith_bonus_effect = {
+			CANONIZER = $CANONIZER$
+			CANDIDATE = $CANDIDATE$
+		}
+	}
+
+	# Cost of the next canonization scales with how many saints the dynasty has.
+	$CANDIDATE$.dynasty ?= {
+		if = {
+			limit = { has_variable = pam_dynasty_saint_count }
+			change_variable = {
+				name = pam_dynasty_saint_count
+				add = 1
+			}
+		}
+		else = {
+			set_variable = {
+				name = pam_dynasty_saint_count
+				value = 1
+			}
+		}
+	}
+}
