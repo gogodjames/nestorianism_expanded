@@ -19,8 +19,12 @@ nex_saint_thomas_mount_01 = {
 	}
 	
 	is_enabled = {
-		scope:holder = {
-			faith = faith:nestorian
+		OR = {
+			scope:holder = {
+				faith = faith:nestorian
+			}
+			scope:c_tiruvannamalai.holder = {
+				faith = faith:nestorian
 		}
 	}
 	
@@ -83,8 +87,12 @@ nex_saint_thomas_mount_02 = {
 	}
 	
 	is_enabled = {
-		scope:holder = {
-			faith = faith:nestorian
+		OR = {
+			scope:holder = {
+				faith = faith:nestorian
+			}
+			scope:c_tiruvannamalai.holder = {
+				faith = faith:nestorian
 		}
 	}
 	
