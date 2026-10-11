@@ -68,6 +68,88 @@ nex_on_game_start = {
             }
         }
 
+        # Enshrine Kollam Copper Plates at Kerala Holy Site
+        if = {
+            limit = {
+                exists = holy_site:kerala
+                exists = faith:nestorian.religious_head
+                holy_site:kerala = { holy_site_artifact_count < 3 }
+            }
+            holy_site:kerala = { save_scope_as = relic_site }
+            faith:nestorian = {
+                save_scope_as = relic_faith
+                religious_head = { save_scope_as = relic_owner }
+            }
+            clear_saved_scope = newly_created_artifact
+            set_artifact_rarity_masterwork = yes
+            scope:relic_owner = {
+                create_artifact = {
+                    name = artifact_relic_kerala_name
+                    description = artifact_relic_kerala_desc
+                    type = pedestal
+                    template = christian_artifact_template
+                    visuals = pedestal_christian_relic
+                    wealth = scope:wealth
+                    quality = scope:quality
+                    history = { 840.1.1 }
+                    modifier = artifact_placeholder_modifier
+                    save_scope_as = newly_created_artifact
+                }
+            }
+            finalize_starting_unique_relic_effect = yes
+            if = {
+                limit = {
+                    exists = scope:newly_created_artifact
+                    scope:relic_site = {
+                        any_holy_site_enshrined_artifact = {
+                            this = scope:newly_created_artifact
+                        }
+                    }
+                }
+            }
+        }
+
+        # Enshrine Nestorian Stele at Chang'an Holy Site
+        if = {
+            limit = {
+                exists = holy_site:chang_an
+                exists = faith:nestorian.religious_head
+                holy_site:chang_an = { holy_site_artifact_count < 3 }
+            }
+            holy_site:chang_an = { save_scope_as = relic_site }
+            faith:nestorian = {
+                save_scope_as = relic_faith
+                religious_head = { save_scope_as = relic_owner }
+            }
+            clear_saved_scope = newly_created_artifact
+            set_artifact_rarity_masterwork = yes
+            scope:relic_owner = {
+                create_artifact = {
+                    name = artifact_relic_nestorian_stele_name
+                    description = artifact_relic_nestorian_stele_desc
+                    type = pedestal
+                    template = christian_artifact_template
+                    visuals = pedestal_christian_relic
+                    wealth = scope:wealth
+                    quality = scope:quality
+                    history = { 840.1.1 }
+                    modifier = artifact_placeholder_modifier
+                    save_scope_as = newly_created_artifact
+                }
+            }
+            finalize_starting_unique_relic_effect = yes
+            if = {
+                limit = {
+                    exists = scope:newly_created_artifact
+                    scope:relic_site = {
+                        any_holy_site_enshrined_artifact = {
+                            this = scope:newly_created_artifact
+                        }
+                    }
+                }
+            }
+        }
+
         # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
         rite:nestorian = {
             every_rite_county = {
