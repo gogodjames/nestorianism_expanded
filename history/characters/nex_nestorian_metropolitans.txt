@@ -412,3 +412,15 @@ nex_india_yohannan_880 = {
 	835.1.1 = { birth = yes } # Estimated
 	900.1.1 = { death = yes } # Estimated
 }
+
+#fictional east syriac clerical ruler of socotra to add some drama
+nex_socotra_Yakob_867 = { 
+	name = "Yakob"
+	faith = nestorian
+	rite = nestorian
+	culture = assyrian
+	trait = education_learning_3
+	838.1.1 = { birth = yes } # Estimated
+	892.1.1 = { death = yes } # Estimated
+}
+

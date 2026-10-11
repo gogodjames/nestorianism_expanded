@@ -14,6 +14,17 @@ nex_on_game_start = {
         title:c_kerala = { set_county_culture = culture:nex_malayali }
         title:c_venadu = { set_county_culture = culture:nex_malayali }
 
+        # Start with the shrine of St. Thomas built
+        title:b_uttaramerur.title_province = {
+            if = {
+                limit = {
+                    has_special_building = no
+                    NOT = { has_building_or_higher = nex_saint_thomas_mount_01 }
+                }
+                add_special_building = nex_saint_thomas_mount_01
+            }
+        }
+
         # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
         rite:nestorian = {
             every_rite_county = {

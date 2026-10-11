@@ -1,0 +1,127 @@
+﻿##########
+# Saint Thomas Mount
+##########
+
+nex_saint_thomas_mount_01 = {
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = legends_of_the_dead }
+			desc = building_funeral_effect_desc
+		}
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cathedral_indian.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		scope:holder = {
+			faith = faith:nestorian
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 150
+
+	character_modifier = {
+		monthly_piety = 0.1
+		clergy_opinion = 5
+	}
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+	
+	province_modifier = {
+		monthly_income = 1
+	}
+
+	next_building = nex_saint_thomas_mount_02
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+	flag = holy_building
+}
+
+nex_saint_thomas_mount_02 = {
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = legends_of_the_dead }
+			desc = building_funeral_effect_desc
+		}
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cathedral_indian.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_crop_rotation
+			}
+		}
+	}
+	
+	is_enabled = {
+		scope:holder = {
+			faith = faith:nestorian
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 500
+
+	character_modifier = {
+		monthly_piety = 0.5
+		monthly_dynasty_prestige_mult = 0.05
+		clergy_opinion = 10
+		same_faith_opinion = 5
+		learning = 1
+	}
+	
+	county_modifier = {
+		tax_mult = 0.15
+		development_growth_factor = 0.15
+		development_growth = 0.2
+	}
+	
+	province_modifier = {
+		monthly_income = 3
+	}
+
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
+}
