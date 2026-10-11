@@ -12,7 +12,7 @@ nex_saint_thomas_mount_01 = {
 
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_cathedral_indian.dds"
+	type_icon = "icon_structure_wartburg.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -68,7 +68,7 @@ nex_saint_thomas_mount_02 = {
 
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_cathedral_indian.dds"
+	type_icon = "icon_structure_mont_st_michel.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
