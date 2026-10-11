@@ -26,6 +26,47 @@ nex_on_game_start = {
             }
         }
 
+        # Enshrine Thomas's relic at Uttaramerur, even under a non-Christian local ruler.
+        if = {
+            limit = {
+                exists = holy_site:uttaramerur
+                exists = faith:nestorian.religious_head
+                holy_site:uttaramerur = { holy_site_artifact_count < 3 }
+            }
+            holy_site:uttaramerur = { save_scope_as = relic_site }
+            faith:nestorian = {
+                save_scope_as = relic_faith
+                religious_head = { save_scope_as = relic_owner }
+            }
+            clear_saved_scope = newly_created_artifact
+            set_artifact_rarity_illustrious = yes
+            scope:relic_owner = {
+                create_artifact = {
+                    name = artifact_relic_thomas_name
+                    description = artifact_relic_thomas_desc
+                    type = pedestal
+                    template = christian_artifact_template
+                    visuals = pedestal_christian_relic
+                    wealth = scope:wealth
+                    quality = scope:quality
+                    history = { type = created_before_history }
+                    modifier = artifact_placeholder_modifier
+                    save_scope_as = newly_created_artifact
+                }
+            }
+            finalize_starting_unique_relic_effect = yes
+            if = {
+                limit = {
+                    exists = scope:newly_created_artifact
+                    scope:relic_site = {
+                        any_holy_site_enshrined_artifact = {
+                            this = scope:newly_created_artifact
+                        }
+                    }
+                }
+            }
+        }
+
         # Convert the mainline Nestorian counties of Mongolic and Turkic cultures.
         rite:nestorian = {
             every_rite_county = {
@@ -61,10 +102,5 @@ nex_on_game_start = {
         
         # Historical Church of the East monasteries.
         nex_initialize_historical_monasteries_effect = yes
-
-        # set scopes required by create_starting_relic_kerala_christian_effect and then runs it to override the event chain that usually populates holy relics at game start
-        holy_site:kerala = { save_scope_as = relic_site }
-        holy_site:kerala.county.holder = { save_scope_as = relic_owner }
-        create_starting_relic_kerala_christian_effect = yes
     }
 }
