@@ -16,7 +16,7 @@ nex_on_game_start = {
         title:c_venadu = { set_county_culture = culture:nex_malayali }
 
         # Start with the shrine of St. Thomas built
-        title:b_kanchipuram.title_province = {
+        title:b_uttaramerur.title_province = {
             if = {
                 limit = {
                     has_special_building = no
@@ -26,12 +26,12 @@ nex_on_game_start = {
             }
         }
 
-        # Enshrine Thomas's relic at Kanchipuram, even under a non-Christian local ruler.
+        # Enshrine Thomas's relic at Uttaramerur, even under a non-Christian local ruler.
         if = {
             limit = {
-                exists = holy_site:kanchipuram
+                exists = holy_site:uttaramerur
                 exists = faith:nestorian.religious_head
-                holy_site:kanchipuram = { holy_site_artifact_count < 3 }
+                holy_site:uttaramerur = { holy_site_artifact_count < 3 }
             }
             holy_site:uttaramerur = { save_scope_as = relic_site }
             faith:nestorian = {
