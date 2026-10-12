@@ -91,7 +91,7 @@ nex_on_game_start = {
                     visuals = pedestal_christian_relic
                     wealth = scope:wealth
                     quality = scope:quality
-                    history = { 840.1.1 }
+                    history = { type = created_before_history}
                     modifier = artifact_placeholder_modifier
                     save_scope_as = newly_created_artifact
                 }
@@ -132,7 +132,7 @@ nex_on_game_start = {
                     visuals = pedestal_christian_relic
                     wealth = scope:wealth
                     quality = scope:quality
-                    history = { 840.1.1 }
+                    history = {type = created_before_history }
                     modifier = artifact_placeholder_modifier
                     save_scope_as = newly_created_artifact
                 }
