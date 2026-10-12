@@ -2,6 +2,7 @@
 	color = { 0.6 0.1 0.1 }
 	created = 800.1.1
 	parents = { tamil }
+	history_loc_override = nex_malayali_history_loc
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_dravidian

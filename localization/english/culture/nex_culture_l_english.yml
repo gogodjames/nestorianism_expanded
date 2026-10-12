@@ -3,6 +3,7 @@
  nex_malayali: "Malayali"
  nex_malayali_prefix: "Malayali"
  nex_malayali_collective_noun: "Malayalis"
+ nex_malayali_history_loc: "Diverged from [CULTURE.GetName] along the Malabar Coast in the year [DATE.GetYear]"
 
  # Languages
  language_malayalam_name: "Malayalam"
