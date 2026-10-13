@@ -22,6 +22,7 @@ nestorian = {
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 	}
 }
 
@@ -50,6 +51,7 @@ zex_nasrani_rite = {
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 	}
 }
 
@@ -73,6 +75,7 @@ zex_arkagun_rite = {
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 		doctrine_concubines
 		doctrine_funeral_sky_burial
 		special_doctrine_pope_blessing
@@ -109,6 +112,7 @@ zex_jingjiao_rite = {
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 		special_doctrine_immaterial_harmony
 		doctrine_family_rites
 	}
@@ -133,5 +137,6 @@ zex_socotran_rite = {
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 	}
 }

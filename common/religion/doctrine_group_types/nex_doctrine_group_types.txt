@@ -1,0 +1,8 @@
+﻿nex_steadfast_faith = {
+	category = special
+	doctrine_lock = faith
+
+	is_available_on_create = {
+		has_doctrine = special_doctrine_nex_steadfast_faith
+	}
+}

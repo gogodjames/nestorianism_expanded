@@ -33,6 +33,7 @@
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
 		special_doctrine_ecumenical_christian
+		special_doctrine_nex_steadfast_faith
 	}
 
 	holy_order_names = {

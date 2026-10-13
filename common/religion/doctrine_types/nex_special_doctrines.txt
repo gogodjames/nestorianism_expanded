@@ -1,0 +1,10 @@
+﻿special_doctrine_nex_steadfast_faith = {
+	doctrine_group_type = nex_steadfast_faith
+	icon = "special_doctrine_ecumenical_christian"
+	visible = yes
+	divergence = 0
+
+	parameters = {
+		sanctioned_false_conversion_county_resistance
+	}
+}
