@@ -18,6 +18,9 @@ nestorian = {
 		}
 
 	doctrines = {
+		# East Syrian law prohibited uncle-niece marriage by Isho'barnun's patriarchate (823-828).
+		# He reversed Timothy I's cousin-marriage ban, Recommended by Uebergold
+		doctrine_consanguinity_cousins
 		doctrine_monasticism_encouraged
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
@@ -46,6 +49,7 @@ zex_nasrani_rite = {
 		}
 
 	doctrines = {
+		doctrine_consanguinity_cousins
 		doctrine_monasticism_encouraged
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
@@ -69,6 +73,7 @@ zex_arkagun_rite = {
 	}
 
 	doctrines = {
+		doctrine_consanguinity_cousins
 		doctrine_monasticism_accepted
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
@@ -105,6 +110,7 @@ zex_jingjiao_rite = {
 		}
 
 	doctrines = {
+		doctrine_consanguinity_cousins
 		doctrine_monasticism_encouraged
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
@@ -129,6 +135,7 @@ zex_socotran_rite = {
 	}
 
 	doctrines = {
+		doctrine_consanguinity_cousins
 		doctrine_monasticism_accepted
 		doctrine_pluralism_pluralistic
 		doctrine_anointment_permitted
