@@ -178,6 +178,20 @@ nex_on_game_start = {
         give_interior_provinces_holders_effect = yes # Mesopotamia/Persia
         give_exterior_provinces_holders_effect = yes # Elsewhere
 
+        # Favor Abdisho II, metropolitan of Nisibis, as the next patriarch in 1066.
+        if = {
+            limit = {
+                game_start_date = 1066.9.15
+                exists = character:patriarch_in_the_east_70
+            }
+            title:d_patriarchate_in_the_east ?= {
+                change_appointment_investment = {
+                    target = character:patriarch_in_the_east_70
+                    value = 500
+                }
+            }
+        }
+
         # Refresh Head of Rites
         faith:nestorian = {
             every_faith_rite = { force_refresh_head_of_rite = yes }
