@@ -15,6 +15,26 @@ nex_on_game_start = {
         title:c_kerala = { set_county_culture = culture:nex_malayali }
         title:c_venadu = { set_county_culture = culture:nex_malayali }
 
+        # 867, Jingjiao was recently persecuted by the Tang, so create some refugees for them
+        if = {
+            limit = { game_start_date = 867.1.1 }
+
+            rite:zex_jingjiao_rite = {
+                set_variable = {
+                    name = associated_county
+                    value = title:c_jingzhao
+                }
+                set_variable = {
+                    name = associated_culture
+                    value = culture:han
+                }
+                set_variable = {
+                    name = converted_development
+                    value = 40
+                }
+            }
+        }
+
         # Start with the shrine of St. Thomas built
         title:b_kanchipuram.title_province = {
             if = {
