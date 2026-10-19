@@ -1,0 +1,333 @@
+﻿namespace = nex_random
+
+## HELPERS
+scripted_effect _prepare_refugee_settlement_effect = {
+	# Amount of counties
+	random_list = {
+		1 = { save_scope_value_as = { name = nex_refugee_count value = 2 } }
+		1 = { save_scope_value_as = { name = nex_refugee_count value = 3 } }
+		1 = { save_scope_value_as = { name = nex_refugee_count value = 4 } }
+	}
+
+	# Pick the destination duchy through a low-development county.
+	random_sub_realm_county = {
+		limit = {
+			is_landless_type_title = no
+			exists = duchy
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = {
+					value = 100
+					divide = { value = development_level add = 1 }
+				}
+			}
+		}
+		duchy = { save_scope_as = nex_refugee_duchy }
+	}
+	if = {
+		limit = { exists = scope:nex_refugee_duchy }
+		while = {
+			count = scope:nex_refugee_count
+			random_sub_realm_county = {
+				limit = {
+					is_landless_type_title = no
+					duchy = scope:nex_refugee_duchy
+					NOT = { is_in_list = nex_refugee_duchy_counties }
+				}
+				weight = {
+					base = 0
+					modifier = {
+						add = {
+							value = 100
+							divide = { value = development_level add = 1 }
+						}
+					}
+				}
+				add_to_list = nex_refugee_duchy_counties
+			}
+		}
+	}
+
+	# Embracing the faith guarantees settlement in the capital
+	capital_county = { add_to_list = nex_refugee_domain_counties }
+	while = {
+		count = { value = scope:nex_refugee_count subtract = 1 }
+		random_held_title = {
+			limit = {
+				tier = tier_county
+				is_landless_type_title = no
+				NOT = { is_in_list = nex_refugee_domain_counties }
+			}
+			weight = {
+				base = 0
+				modifier = {
+					add = {
+						value = 100
+						divide = { value = development_level add = 1 }
+					}
+				}
+			}
+			add_to_list = nex_refugee_domain_counties
+		}
+	}
+
+	# Roll each unique destination once, including counties shared by both lists.
+	every_in_list = {
+		list = nex_refugee_duchy_counties
+		random = {
+			chance = 20
+			add_to_list = nex_refugee_han_counties
+		}
+	}
+	every_in_list = {
+		list = nex_refugee_domain_counties
+		limit = { NOT = { is_in_list = nex_refugee_duchy_counties } }
+		random = {
+			chance = 20
+			add_to_list = nex_refugee_han_counties
+		}
+	}
+}
+
+scripted_effect _settle_refugees_effect = {
+	if = {
+		limit = { always = $CONVERTING$ }
+		custom_tooltip = nex_random.1.settle_domain
+		every_in_list = {
+			list = nex_refugee_domain_counties
+			hidden_effect = {
+				_settle_refugee_county_effect = { PROTECT_CAPITAL = yes }
+			}
+		}
+	}
+	else = {
+		custom_tooltip = nex_random.1.settle_duchy
+		every_in_list = {
+			list = nex_refugee_duchy_counties
+			hidden_effect = {
+				_settle_refugee_county_effect = { PROTECT_CAPITAL = no }
+			}
+		}
+	}
+}
+
+scripted_effect _settle_refugee_county_effect = {
+	set_county_faith = faith:nestorian
+	set_county_rite = rite:zex_jingjiao_rite
+	change_development_level = 1
+	change_county_control = -5
+	if = {
+		limit = {
+			is_in_list = nex_refugee_han_counties
+			OR = {
+				NOT = { always = $PROTECT_CAPITAL$ }
+				this != root.capital_county
+			}
+		}
+		set_county_culture = culture:han
+	}
+}
+
+## EVENTS
+
+# Refugees from the Tang
+nex_random.1 = {
+	type = character_event
+	window = big_event_window
+	title = nex_random.1.t
+	desc = nex_random.1.desc
+
+	theme = default
+	override_background = { reference = "courtyard" }
+
+	left_portrait = {
+		character = root
+		animation = thinking_all
+	}
+	right_portrait = {
+		character = scope:faithful_head
+		animation = preaching
+	}
+
+	trigger = {
+		current_year < 1000
+		NOT = { has_variable = nex_had_jiangjiao_refugees_event }
+		is_available_quick = {
+			ruler = yes
+			landed = yes
+			imprisoned = no
+			travel = no
+		}
+
+		# Todo Region Check
+		NOT = { title:h_china.holder ?= top_liege }
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				template = pool_repopulate_learning
+				age = { 30 60 }
+				gender = male
+				culture = culture:han
+				faith = faith:nestorian
+				rite = rite:zex_jingjiao_rite
+				location = root.capital_province
+				save_scope_as = faithful_head
+			}
+			scope:faithful_head ?= {
+				if = { limit = { NOT = { has_trait = devoted } } }
+				add_trait = devoted
+			}
+
+			set_variable = nex_had_jiangjiao_refugees_event
+			_prepare_refugee_settlement_effect = yes
+		}
+	}
+
+	# Embrace the Faith
+	option = {
+		name = nex_random.1.a
+		trigger = {
+			rite != scope:faithful_head.rite
+			NAND = { 
+				has_trait = zealous
+				religion != religion:christianity_religion
+			} 
+		}
+
+		show_as_tooltip = { set_character_rite_with_conversion = rite:zex_jingjiao_rite }
+		hidden_effect = {
+			rite = { save_scope_as = old_rite }
+			faith = { save_scope_as = old_faith }
+			scope:faithful_head = { save_scope_as = founder }
+			set_character_faith = faith:nestorian
+			set_character_rite = rite:zex_jingjiao_rite
+			trigger_event = {
+				on_action = on_faith_conversion
+			}
+		}
+
+		add_courtier = scope:faithful_head
+		_settle_refugees_effect = { CONVERTING = yes }
+	}
+
+	# Settle them
+	option = {
+		name = nex_random.1.b
+
+		add_courtier = scope:faithful_head
+		_settle_refugees_effect = { CONVERTING = no }
+	}
+
+	# Settle them (Nestorian)
+	option = {
+		name = nex_random.1.c
+		reason = nex_random.1.c.reason
+
+		trigger = {
+			religion = religion:christianity_religion
+		}
+
+		add_courtier = scope:faithful_head
+		_settle_refugees_effect = { CONVERTING = no }
+	}
+
+	# Attempt to Hire the priest
+	option = {
+		name = nex_random.1.d
+		flavor = nex_random.1.d.tt
+		highlight_portrait = scope:faithful_head
+		trigger = { gold > 0 }
+		show_as_unavailable = { always = yes }
+
+		random_list = {
+			66 = {
+				modifier = {
+					add = -20
+					scope:faithful_head = { has_trait = zealous }
+				}
+				modifier = {
+					add = 10
+					scope:faithful_head = { has_trait = cynical }
+				}
+				modifier = {
+					add = 20
+					scope:faithful_head = { has_trait = greedy }
+				}
+				pay_short_term_gold = {
+					target = scope:faithful_head
+					gold = minor_gold_value
+				}
+				add_courtier = scope:faithful_head
+			}
+			34 = {
+				modifier = {
+					add = 20
+					scope:faithful_head = { has_trait = zealous }
+				}
+				modifier = {
+					add = -10
+					scope:faithful_head = { has_trait = cynical }
+				}
+				modifier = {
+					add = -20
+					scope:faithful_head = { has_trait = greedy }
+				}
+				custom_tooltip = nex_random.1.d.refused
+			}
+		}
+	}
+
+	# Kill them (Zealous Hostile)
+	option = {
+		name = nex_random.1.e
+		trait = wrathful
+		trait = zealous
+		trigger = {
+			rite = {
+				rite_hostility_level = {
+					target = scope:faithful_head.rite
+					value >= faith_hostile_level
+				}
+			}
+			OR = {
+				has_trait = wrathful
+				has_trait = zealous
+			}
+			NOT = {
+				has_trait = compassionate
+				has_trait = cynical
+			}
+		}
+
+		stress_and_fulfillment_impact = {
+			wrathful = minor_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			sadistic = medium_stress_impact_loss
+			greedy = minor_stress_impact_loss
+			compassionate = massive_stress_impact_gain
+			cynical = minor_stress_impact_gain
+			generous = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+		}
+
+		scope:faithful_head = {
+			death = {
+				killer = root
+				death_reason = death_execution
+			}
+		}
+		add_gold = 25
+		add_dread = 15
+	}
+
+	# Send them onwards
+	option = {
+		name = nex_random.1.f
+		timeout_option = yes
+	}
+}
