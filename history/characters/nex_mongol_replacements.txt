@@ -10,7 +10,7 @@
     1223.1.2 = {
         birth = "1223.1.2"
     }
-    1254.1.2 = {
+    1254.1.3 = { # day after vanilla 1254.1.2 rite = nestorian, so ours wins deterministically
         rite = zex_arkagun_rite
     }
 }
